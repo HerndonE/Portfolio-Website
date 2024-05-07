@@ -41,6 +41,8 @@
   display: flex;
 }
 
+/******************************/
+
 .sections-container {
   margin-left: 250px;
   display: flex;
@@ -55,3 +57,21 @@
 .custom-paragraph {
   width: 600px; /* Set a specific width for the paragraph */
 }
+
+
+li::marker {
+	color: #58dad4;
+  }
+
+.ul-modified {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	column-gap:50px; /* Adjust this value as needed */
+  }
+  
+  .ul-modified::marker {
+	color: #58dad4;
+  }

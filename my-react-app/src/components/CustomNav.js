@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
 const CustomNav = ({ li, handleClick  }) => {
-  const [window, setWindow] = useState(false);
+  const [window] = useState(false);
 
   /*
+  const [window, setWindow] = useState(false);
   let openClose = () => {
     if (window === false) {
       setWindow(true);
@@ -16,6 +17,8 @@ const CustomNav = ({ li, handleClick  }) => {
     <nav className="navbar-menu" style={{ width: window === false ? 250 : 60 }}>
       <h1>Ethan Herndon</h1>
       <h3>Software Engineer</h3>
+      <p>Developing quality new codebases, programs, and full-stack applications from the ground up.</p>
+							
       
       {/* 
       <div className="burger" onClick={() => openClose()}>
