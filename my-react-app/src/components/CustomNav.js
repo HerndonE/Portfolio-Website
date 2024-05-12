@@ -1,4 +1,9 @@
+/*
+npm install bootstrap bootstrap-icons
+npm install --save react-bootstrap bootstrap@4
+*/
 import React, { useState } from "react";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const CustomNav = ({ li, handleClick  }) => {
   const [window] = useState(false);
@@ -40,6 +45,10 @@ const CustomNav = ({ li, handleClick  }) => {
           </div>
         ))}
       </ul>
+      <div class="nav-footer-icons">
+        <a href="https://github.com/HerndonE" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/ethan-herndon/" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i></a>
+      </div>
     </nav>
   );
 };

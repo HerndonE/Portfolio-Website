@@ -55,12 +55,12 @@
 }
 
 .custom-paragraph {
-  width: 600px; /* Set a specific width for the paragraph */
+  width: 1000px; /* Set a specific width for the paragraph */
 }
 
 .custom-about {
   flex-direction: column; /* Arrange children vertically */
-  width: 800px; /* Set a specific width for the flex container */
+  width: 1000px; /* Set a specific width for the flex container */
 }
 
 
@@ -90,11 +90,12 @@ li::marker {
   align-items: center;
   justify-content: start;
   margin-bottom: 20px;
+  position: relative; /* Required for positioning the hover box */
 }
 
 .experience-start-year {
   font-weight: bold;
-  border-right: 1px solid #444;
+  border-right: 2px solid #444;
   padding-right: 30px;
   padding-left: 10px;
   white-space: nowrap;
@@ -109,13 +110,11 @@ li::marker {
   padding-left: 50px;
 }
 
-
 .job-title {
   color: #000000;
   font-weight: bold;
   font-size: 1.2em;
 }
-
 
 .company-name {
   font-weight: bold;
@@ -159,4 +158,17 @@ li::marker {
 .project-image {
   display: flex;
   justify-content: center;
+}
+
+/* Hover box styles 
+.experience-entry:hover::after {*/
+.test:hover::after {
+  content: ""; /* Required for the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Covers the entire .experience-entry element */
+  height: 100%; /* Covers the entire .experience-entry element */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  z-index: 1; /* Ensure the hover box is above other content */
 }

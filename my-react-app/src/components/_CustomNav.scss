@@ -15,6 +15,30 @@ $borderLeftColor: #58b5fc;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
   transition: all 0.5s ease;
   
+  .nav-footer-icons {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    left: 2%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure icons are above other content */
+  }
+  
+  .nav-footer-icons a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .nav-footer-icons i {
+    font-size: 24px; /* Adjust the size of the icons as needed */
+    margin: 0 10px; /* Adjust the spacing between icons as needed */
+    color: black; /* Set initial color of icons */
+    transition: color 0.3s; /* Add transition effect for color change */
+  }
+  
+  .nav-footer-icons i:hover {
+    color: blue; /* Change color on hover */
+  }
+
   .burger {
     display: flex;
     justify-content: flex-end;
@@ -56,3 +80,4 @@ $borderLeftColor: #58b5fc;
     }
   }
 }
+
