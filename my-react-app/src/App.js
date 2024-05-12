@@ -28,23 +28,21 @@ function App() {
       handleClick={handleClick} // Pass handleClick function to CustomNav
     />
     <div className="sections-container">
-      <div id="about" className="section">
-        <h2>About</h2>
-        <p className='custom-paragraph'> 
-              Back in 2001, I laid my eyes on the video game that would ignite my Computer Science career. From that moment, I knew I wanted to share that inspiration with the world. Fast forward to present times, 
-							I've had the privilege of serving government entities, the medical industry, and global software corporations by developing software as well as provide quality information technology support.<br /><br />
-							Outside of the world of computers, I enjoy camping, hiking, and water-skiing.<br /><br />
-              <div class="ul-modified">
-									<li>Python</li>
-									<li>AWS (EC2)</li>
-									<li>Flutter</li>
-									<li>Discord.py</li>
-									<li>SQL</li>
-								</div>
-        </p>
-      </div>
+      	<div id="about" className="section">
+				<p className='custom-about'>             			
+					Back in 2001, I laid my eyes on the video game that would ignite my Computer Science career. From that moment, I knew I wanted to share that inspiration with the world. Fast forward to present times, 
+					I've had the privilege of serving government entities, the medical industry, and global software corporations by developing software as well as provide quality information technology support.<br /><br />
+					Outside of the world of computers, I enjoy camping, hiking, and water-skiing.<br /><br />
+					<div class="ul-modified">
+						<li>Python</li>
+						<li>AWS (EC2)</li>
+						<li>Flutter</li>
+						<li>Discord.py</li>
+						<li>SQL</li>
+					</div>
+				</p>
+      	</div>
       <div id="experience" className="section">
-        <h2>Experience</h2>
         <p className='custom-paragraph'>             
 			<div class="experience-entry">
 				<div class="experience-start-year">2022 - PRESENT</div>						
@@ -108,7 +106,6 @@ function App() {
     </p>
       </div>
       <div id="projects" className="section">
-        <h2>Projects</h2>
         <p className='custom-paragraph'>
 			<div class="experience-entry">
 				<div class="project-image">
@@ -127,7 +124,7 @@ function App() {
 			<div class="experience-entry">						
 				<div class="project-image">
 					<img src={`/img/weather-app.png`} alt="Project Icon" width={100} height={100} />	
-					</div>						
+				</div>						
 				<div class="experience-description">						
 					<div class="company-names">						
 						<div class="job-title">SSMTP Messenger</div>						
@@ -143,8 +140,8 @@ function App() {
 			</div>
 			<div class="experience-entry">						
 				<div class="project-image">
-					<img src={`https://raw.githubusercontent.com/HerndonE/Battlezone-Missions/master/BZCC%20Lost%20Missions%20Campaign/Images/LMBZCCLogo.png`} alt="Project Icon" width={100} height={100} />
-					</div>						
+					<img src={`https://raw.githubusercontent.com/HerndonE/Battlezone-Missions/master/BZCC%20Lost%20Missions%20Campaign/Images/LMBZCCLogo.png`} alt="Project Icon" width={200} height={100} />
+				</div>						
 				<div class="experience-description">						
 					<div class="company-names">						
 						<div class="job-title">Battlezone Combat Commander: Lost Missions Campaign</div>						
