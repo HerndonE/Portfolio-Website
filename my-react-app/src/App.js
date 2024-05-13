@@ -33,6 +33,7 @@ function App() {
 					Back in 2001, I laid my eyes on the video game that would ignite my Computer Science career. From that moment, I knew I wanted to share that inspiration with the world. Fast forward to present times, 
 					I've had the privilege of serving government entities, the medical industry, and global software corporations by developing software as well as provide quality information technology support.<br /><br />
 					Outside of the world of computers, I enjoy camping, hiking, and water-skiing.<br /><br />
+					Here is the current technologies I have been working with:<br />
 					<div class="ul-modified">
 						<li>Python</li>
 						<li>AWS (EC2)</li>
@@ -47,7 +48,7 @@ function App() {
 			<div class="experience-entry">
 				<div class="experience-start-year">2022 - PRESENT</div>						
 					<div class="experience-description">						
-						<div class="job-title">Software Engineer - Mighty Oak Medical</div>						
+						<a href="https://mightyoakmedical.com/" target="_blank" rel="noreferrer"><div class="job-title">Software Engineer - Mighty Oak Medical</div></a>						
 						<ul>
 							<li>Designed, developed, and maintained a dynamic full-stack web and mobile application utilizing Flutter, Elixir, React.js, Docker, AWS (S3), and PostgreSQL, serving both internal and over 150 external users via the mobile application. Ensure optimal performance and scalability through ongoing support and maintenance of the application stack.</li>
 							<li>Converting pre-existing in house macros (Visual Basic) in SolidWorks 2016 to new maintainable high quality codebases such as Python.</li>
@@ -83,7 +84,7 @@ function App() {
 				<div class="experience-start-year"> July 2021 - Dec 2021</div>						
 				<div class="experience-description">						
 					<div class="company-names">						
-						<div class="job-title">Junior Technical Support Specialist - Atlassian</div>						
+						<a href="https://www.atlassian.com/" target="_blank" rel="noreferrer"><div class="job-title">Junior Technical Support Specialist - Atlassian</div></a>						
 					</div>						
 					<ul>
 						<li>Assisting over 8000 Atlassian employees worldwide by responding to help chat, tickets, and providing level 2 technical support.</li>
@@ -111,54 +112,45 @@ function App() {
 				<div class="project-image">
 					<img src={`/img/mcd-icon.png`} alt="Project Icon" width={100} height={100} />	
 				</div>					
-				<div class="experience-description">						
-					<div class="job-title">Discord Bot for Vanilla Minecraft (Java Edition)</div>						
-					A Discord bot communicates with people and players between Discord and Minecraft. 
-					<div class="tags">
-						<span class="tag">Python</span>
-						<span class="tag">PyQt5</span>
-						<span class="tag">win32com</span>
-					</div>	
-				</div>
+					<div class="experience-description">						
+						<a href= "https://github.com/HerndonE/Vanilla-Minecraft-Discord-Bot" target="_blank" rel="noreferrer"><div class="job-title">Discord Bot for Vanilla Minecraft (Java Edition)</div></a>						
+							A Discord bot communicates with people and players between Discord and Minecraft. 
+							<div class="tags">
+								<span class="tag">Python</span>
+								<span class="tag">PyQt5</span>
+								<span class="tag">win32com</span>
+							</div>	
+					</div>
 			</div>
 			<div class="experience-entry">						
 				<div class="project-image">
 					<img src={`/img/weather-app.png`} alt="Project Icon" width={100} height={100} />	
 				</div>						
-				<div class="experience-description">						
-					<div class="company-names">						
-						<div class="job-title">SSMTP Messenger</div>						
-					</div>						
-					A simple way for users to use a send-only sendmail emulator.
-					<div class="tags">
-						<span class="tag">Python</span>
-						<span class="tag">SSMTP</span>
-						<span class="tag">SMS</span>
-						<span class="tag">Gmail</span>
-					</div>		
-				</div>					
+					<div class="experience-description">											
+						<a href="https://github.com/HerndonE/SSMTP-Messenger" target="_blank" rel="noreferrer"><div class="job-title">SSMTP Messenger</div></a>											
+							A simple way for users to use a send-only sendmail emulator.
+							<div class="tags">
+								<span class="tag">Python</span>
+								<span class="tag">SSMTP</span>
+								<span class="tag">SMS</span>
+								<span class="tag">Gmail</span>
+							</div>		
+					</div>					
 			</div>
 			<div class="experience-entry">						
 				<div class="project-image">
 					<img src={`https://raw.githubusercontent.com/HerndonE/Battlezone-Missions/master/BZCC%20Lost%20Missions%20Campaign/Images/LMBZCCLogo.png`} alt="Project Icon" width={200} height={100} />
 				</div>						
-				<div class="experience-description">						
-					<div class="company-names">						
-						<div class="job-title">Battlezone Combat Commander: Lost Missions Campaign</div>						
+					<div class="experience-description">										
+						<a href="https://github.com/HerndonE/Battlezone-Missions" target="_blank" rel="noreferrer"><div class="job-title">Battlezone Combat Commander: Lost Missions Campaign</div></a>											
+							Introducing 5 new missions for Battlezone Combat Commander; follow the ISDF on their pursuit to destroy the Scion. This fan made campaign branches parallel with the ISDF campaign bringing a new adventure for the game.
+							<div class="tags">
+								<span class="tag">Lua</span>
+								<span class="tag">AIP</span>
+								<span class="tag">BZN</span>
+							</div>		
 					</div>						
-					Introducing 5 new missions for Battlezone Combat Commander; follow the ISDF on their pursuit to destroy the Scion. This fan made campaign branches parallel with the ISDF campaign bringing a new adventure for the game.
-					<div class="tags">
-						<span class="tag">Lua</span>
-						<span class="tag">AIP</span>
-						<span class="tag">BZN</span>
-					</div>		
-					
-				</div>						
 			</div>
-
-
-
-
 		</p>
       </div>
     </div>
