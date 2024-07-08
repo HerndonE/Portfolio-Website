@@ -50,8 +50,11 @@
 }
 
 .section {
-  margin-bottom: 10px; 
   padding: 100px;
+  padding-right: 50px;
+  /*background-color: lightblue;  Just for demonstration */
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .custom-paragraph {
@@ -60,7 +63,8 @@
 
 .custom-about {
   flex-direction: column; /* Arrange children vertically */
-  width: 1000px; /* Set a specific width for the flex container */
+  width: 800px; /* Set a specific width for the flex container */
+  padding-left: 245px;
 }
 
 

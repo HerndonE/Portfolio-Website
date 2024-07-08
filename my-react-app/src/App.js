@@ -29,9 +29,9 @@ function App() {
     />
     <div className="sections-container">
       	<div id="about" className="section">
-				<p className='custom-about'>             			
+				<p className="custom-about">             			
 					Back in 2001, I laid my eyes on the video game that would ignite my Computer Science career. From that moment, I knew I wanted to share that inspiration with the world. Fast forward to present times, 
-					I've had the privilege of serving government entities, the medical industry, and global software corporations by developing software as well as provide quality information technology support.<br /><br />
+					I've had the privilege of serving government entities, the medical industry, and global software corporations by developing software as well as provide quality information technology support.
 					Outside of the world of computers, I enjoy camping, hiking, and water-skiing.<br /><br />
 					Here are the current technologies I have been working with:<br />
 					<div class="ul-modified">
