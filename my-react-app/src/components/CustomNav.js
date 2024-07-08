@@ -22,7 +22,7 @@ const CustomNav = ({ li, handleClick  }) => {
     <nav className="navbar-menu" style={{ width: window === false ? 300 : 60 }}>
       <h1>Ethan Herndon</h1><br />
       <h3>Software Engineer</h3><br />
-      <p>Developing quality new codebases, programs, and full-stack applications from the ground up.</p>
+      <p>Developing new quality codebases, programs, and full-stack applications from the ground up.</p>
       {/* 
       <div className="burger" onClick={() => openClose()}>
         <img src="img/menu.svg" alt="burger" />
