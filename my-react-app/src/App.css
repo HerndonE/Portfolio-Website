@@ -39,6 +39,7 @@
 
 .app-container {
   display: flex;
+  background-color:  #08120e;
 }
 
 /******************************/
@@ -47,6 +48,8 @@
   margin-left: 250px;
   display: flex;
   flex-direction: column;
+  background-color:  #08120e;
+  color: rgb(163, 162, 162);
 }
 
 .section {
@@ -115,7 +118,7 @@ li::marker {
 }
 
 .job-title {
-  color: #000000;
+  color: white;
   font-weight: bold;
   font-size: 1.2em;
 }

@@ -11,7 +11,8 @@ $borderLeftColor: #58b5fc;
   width: 250px;
   height: 100vh;
   overflow-y: auto; // Allow vertical scrolling within navbar
-  background-color: $backgroundColor;
+  background-color:  #08120e;
+  color: rgb(163, 162, 162);
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
   transition: all 0.5s ease;
   
@@ -31,7 +32,7 @@ $borderLeftColor: #58b5fc;
   .nav-footer-icons i {
     font-size: 24px; /* Adjust the size of the icons as needed */
     margin: 0 10px; /* Adjust the spacing between icons as needed */
-    color: black; /* Set initial color of icons */
+    color: rgb(163, 162, 162); /* Set initial color of icons */
     transition: color 0.3s; /* Add transition effect for color change */
   }
   
@@ -60,7 +61,7 @@ $borderLeftColor: #58b5fc;
       font-size: 16px;
       letter-spacing: 0px;
       line-height: 38px;
-      color: $textcolor;
+      color: rgb(163, 162, 162);
       font-family: "Lato";
       font-weight: 400;
       
