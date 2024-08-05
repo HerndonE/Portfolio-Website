@@ -21,9 +21,9 @@ function App() {
     <div className="app-container">
     <CustomNav
       li={[
-        ["About", "img/dashboard.svg"],
-        ["Experience", "img/restaurant.svg"],
-        ["Projects", "img/manage user.svg"]
+        ["About"],
+        ["Experience"],
+        ["Projects"]
       ]}
       handleClick={handleClick} // Pass handleClick function to CustomNav
     />
