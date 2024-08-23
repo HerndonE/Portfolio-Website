@@ -21,8 +21,8 @@ const CustomNav = ({ li, handleClick  }) => {
   return (
     <nav className="navbar-menu" style={{ width: window === false ? 320 : 60 }}>
       <ul className="navbar__list">
-      <h1>Ethan Herndon</h1><br />
-      <h3>Software Engineer</h3><br />
+      <div class="name"><h1>Ethan Herndon</h1></div><br />
+      <div class="role"><h3>Software Engineer</h3></div><br />
       <p>Developing new quality codebases, programs, and full-stack applications from the ground up.</p>
         {li.map((item, i) => (
           <div className="navbar__li-box" key={i} onClick={() => handleClick(item[0].toLowerCase())}>

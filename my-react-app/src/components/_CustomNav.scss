@@ -2,7 +2,8 @@
 
 $backgroundColor: white;
 $textcolor: #000000;
-$borderLeftColor: #58b5fc;
+$borderLeftColor: rgb(230, 230, 230);
+
 
 .navbar-menu {
   position: fixed; // Keep navbar fixed
@@ -37,7 +38,7 @@ $borderLeftColor: #58b5fc;
   }
   
   .nav-footer-icons i:hover {
-    color: blue; /* Change color on hover */
+    color: rgb(230, 230, 230); /* Change color on hover */
   }
 
   .burger {
@@ -53,6 +54,14 @@ $borderLeftColor: #58b5fc;
   .navbar__list {
     list-style-type: none;
     
+    .name {
+      color: white;
+    }
+    
+    .role {
+      color: rgb(230, 230, 230);
+    }
+
     .navbar__li {
       display: inline-block;
       padding: 0px 0px 0px 12px;
