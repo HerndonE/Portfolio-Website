@@ -2,6 +2,7 @@
 import './App.css';
 import "./styles.scss";
 import CustomNav from "./components/CustomNav.js";
+import { useEffect } from "react"
 
 
 /*
@@ -11,6 +12,11 @@ Nisi vitae suscipit tellus mauris a. Cursus in hac habitasse platea dictumst qui
 */
 
 function App() {
+
+	useEffect(() => {
+		document.title = "Ethan Herndon"
+		}, [])
+
   const handleClick = (id) => {
     const element = document.getElementById(id);
     if (element) {

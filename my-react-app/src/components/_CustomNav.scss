@@ -23,6 +23,7 @@ $borderLeftColor: rgb(230, 230, 230);
     left: 2%;
     transform: translateX(-50%);
     z-index: 1000; /* Ensure icons are above other content */
+    padding-left: 20px;
   }
   
   .nav-footer-icons a {
@@ -53,9 +54,12 @@ $borderLeftColor: rgb(230, 230, 230);
   
   .navbar__list {
     list-style-type: none;
+    padding-left: 10px;
+    padding-top: 5px;
     
     .name {
       color: white;
+      font-size: 25px;
     }
     
     .role {
