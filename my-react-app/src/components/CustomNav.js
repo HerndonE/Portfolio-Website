@@ -8,16 +8,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const CustomNav = ({ li, handleClick  }) => {
   const [window] = useState(false);
 
-  /*
-  const [window, setWindow] = useState(false);
-  let openClose = () => {
-    if (window === false) {
-      setWindow(true);
-    } else {
-      setWindow(false);
-    }
-    */
-
   return (
     <nav className="navbar-menu" style={{ width: window === false ? 320 : 60 }}>
       <ul className="navbar__list">

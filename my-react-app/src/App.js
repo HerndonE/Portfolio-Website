@@ -4,13 +4,6 @@ import "./styles.scss";
 import CustomNav from "./components/CustomNav.js";
 import { useEffect } from "react"
 
-
-/*
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non consectetur a erat nam at. Urna duis convallis convallis tellus id. Mauris ultrices eros in cursus turpis massa tincidunt. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Mus mauris vitae ultricies leo integer malesuada nunc. Mus mauris vitae ultricies leo integer malesuada nunc vel. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Aliquam eleifend mi in nulla posuere sollicitudin. Porta nibh venenatis cras sed felis eget velit. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Tortor aliquam nulla facilisi cras fermentum. Mi ipsum faucibus vitae aliquet nec ullamcorper.
-
-Nisi vitae suscipit tellus mauris a. Cursus in hac habitasse platea dictumst quisque sagittis purus. A condimentum vitae sapien pellentesque. Sit amet consectetur adipiscing elit ut aliquam purus sit. Adipiscing elit duis tristique sollicitudin nibh. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Consequat mauris nunc congue nisi vitae suscipit tellus. Volutpat diam ut venenatis tellus in metus. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst quisque sagittis. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Lacus luctus accumsan tortor posuere ac ut. Tempor nec feugiat nisl pretium. Nisl tincidunt eget nullam non nisi. Elementum curabitur vitae nunc sed. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Dui sapien eget mi proin sed libero. Donec massa sapien faucibus et molestie ac feugiat. Massa placerat duis ultricies lacus.
-*/
-
 function App() {
 
 	useEffect(() => {
