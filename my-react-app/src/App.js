@@ -1,7 +1,9 @@
 import "./App.css";
 import "./styles.scss";
 import CustomNav from "./components/CustomNav.js";
+import { TagContainer } from "./components/TagData.js";
 import { useEffect } from "react";
+import Tags from "./components/Tags.js";
 
 function App() {
   useEffect(() => {
@@ -139,16 +141,7 @@ function App() {
                       compliance in mind.
                     </li>
                   </ul>
-                  <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">AWS</span>
-                    <span class="tag">Javascript</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">win32com</span>
-                    <span class="tag">Flutter</span>
-                    <span class="tag">VBA</span>
-                    <span class="tag">Automation</span>
-                  </div>
+                  <Tags AllTags={TagContainer} IndexOfAllTags={0} />
                 </div>
               </div>
               <div class="experience-entry">
@@ -200,16 +193,11 @@ function App() {
                       automation.
                     </li>
                   </ul>
-                  <div class="tags">
-                    <span class="tag">Jira</span>
-                    <span class="tag">Confluence</span>
-                    <span class="tag">Jira Service Desk</span>
-                    <span class="tag">Help Desk Support</span>
-                    <span class="tag">SAML</span>
-                  </div>
+                  <Tags AllTags={TagContainer} IndexOfAllTags={1} />
                 </div>
               </div>
             </p>
+            SEE FULL RESUME HERE
           </div>
           <div id="projects" className="section">
             <p className="custom-paragraph">
@@ -236,11 +224,7 @@ function App() {
                   </a>
                   A Discord bot communicates with people and players between
                   Discord and Minecraft.
-                  <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">PyQt5</span>
-                    <span class="tag">win32com</span>
-                  </div>
+                  <Tags AllTags={TagContainer} IndexOfAllTags={2} />
                 </div>
               </div>
               <div class="experience-entry">
@@ -264,12 +248,7 @@ function App() {
                     </div>
                   </a>
                   A simple way for users to use a send-only sendmail emulator.
-                  <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">SSMTP</span>
-                    <span class="tag">SMS</span>
-                    <span class="tag">Gmail</span>
-                  </div>
+                  <Tags AllTags={TagContainer} IndexOfAllTags={3} />
                 </div>
               </div>
               <div class="experience-entry">
@@ -297,12 +276,9 @@ function App() {
                   follow the ISDF on their pursuit to destroy the Scion. This
                   fan made campaign branches parallel with the ISDF campaign
                   bringing a new adventure for the game.
-                  <div class="tags">
-                    <span class="tag">Lua</span>
-                    <span class="tag">AIP</span>
-                    <span class="tag">BZN</span>
-                  </div>
+                  <Tags AllTags={TagContainer} IndexOfAllTags={4} />
                 </div>
+                SEE FULL PROJECTS HERE
               </div>
             </p>
           </div>
