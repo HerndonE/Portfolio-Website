@@ -9,13 +9,16 @@ function Tags({ AllTags, IndexOfAllTags }) {
   // Get tags for the given index
   const tags = AllTags[IndexOfAllTags] || [];
 
+  console.log(tags);
   return (
     <div className="tags">
-      {tags.map((tag, index) => (
-        <div key={index} className="tag">
-          {tag}
-        </div>
-      ))}
+      {tags.map((tag, index) => {
+        return (
+          <div key={tag + index} className="tag">
+            {tag}
+          </div>
+        );
+      })}
     </div>
   );
 }
