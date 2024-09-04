@@ -118,16 +118,23 @@ li::marker {
   padding-left: 50px;
 }
 
-.job-title {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2em;
+.experience-description .link {
   text-decoration: none;
 }
 
-a {
+.job-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.link {
   text-decoration: none;
+  color: inherit;
+}
+
+.link:hover .job-title {
+  color: lightblue;
 }
 
 .company-name {
