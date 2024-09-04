@@ -45,9 +45,9 @@ function App() {
       <div id="experience" className="section">
         <p className='custom-paragraph'>             
 			<div class="experience-entry">
-				<div class="experience-start-year">2022 - PRESENT</div>						
+				<div class="experience-start-year">Jan 2022 - PRESENT</div>						
 					<div class="experience-description">						
-						<a href="https://mightyoakmedical.com/" target="_blank" rel="noreferrer"><div class="job-title">Software Engineer - Mighty Oak Medical</div></a>						
+						<a href="https://mightyoakmedical.com/" target="_blank" rel="noreferrer"><div class="job-title">Software Engineer - Mighty Oak Medical <span>&#8599;</span> </div></a>						
 						<ul>
 							<li>Designed, developed, and maintained a dynamic full-stack web and mobile application utilizing Flutter, Elixir, React.js, Docker, AWS (S3), and PostgreSQL, serving both internal and over 150 external users via the mobile application. Ensure optimal performance and scalability through ongoing support and maintenance of the application stack.</li>
 							<li>Converting pre-existing in house macros (Visual Basic) in SolidWorks 2016 to new maintainable high quality codebases such as Python.</li>
@@ -78,12 +78,11 @@ function App() {
 						</div>
 					</div>
 			</div>
-
 			<div class="experience-entry">						
 				<div class="experience-start-year"> July 2021 - Dec 2021</div>						
 				<div class="experience-description">						
 					<div class="company-names">						
-						<a href="https://www.atlassian.com/" target="_blank" rel="noreferrer"><div class="job-title">Junior Technical Support Specialist - Atlassian</div></a>						
+						<a href="https://www.atlassian.com/" target="_blank" rel="noreferrer"><div class="job-title">Junior Technical Support Specialist - Atlassian <span>&#8599;</span> </div></a>						
 					</div>						
 					<ul>
 						<li>Assisting over 8000 Atlassian employees worldwide by responding to help chat, tickets, and providing level 2 technical support.</li>
@@ -112,7 +111,7 @@ function App() {
 					<img src={`/img/mcd-icon.png`} alt="Project Icon" width={100} height={100} />	
 				</div>					
 					<div class="experience-description">						
-						<a href= "https://github.com/HerndonE/Vanilla-Minecraft-Discord-Bot" target="_blank" rel="noreferrer"><div class="job-title">Discord Bot for Vanilla Minecraft (Java Edition)</div></a>						
+						<a href= "https://github.com/HerndonE/Vanilla-Minecraft-Discord-Bot" target="_blank" rel="noreferrer"><div class="job-title">Discord Bot for Vanilla Minecraft (Java Edition) <span>&#8599;</span> </div></a>						
 							A Discord bot communicates with people and players between Discord and Minecraft. 
 							<div class="tags">
 								<span class="tag">Python</span>
@@ -126,7 +125,7 @@ function App() {
 					<img src={`/img/weather-app.png`} alt="Project Icon" width={100} height={100} />	
 				</div>						
 					<div class="experience-description">											
-						<a href="https://github.com/HerndonE/SSMTP-Messenger" target="_blank" rel="noreferrer"><div class="job-title">SSMTP Messenger</div></a>											
+						<a href="https://github.com/HerndonE/SSMTP-Messenger" target="_blank" rel="noreferrer"><div class="job-title">SSMTP Messenger <span>&#8599;</span> </div></a>											
 							A simple way for users to use a send-only sendmail emulator.
 							<div class="tags">
 								<span class="tag">Python</span>
@@ -141,7 +140,7 @@ function App() {
 					<img src={`https://raw.githubusercontent.com/HerndonE/Battlezone-Missions/master/BZCC%20Lost%20Missions%20Campaign/Images/LMBZCCLogo.png`} alt="Project Icon" width={200} height={100} />
 				</div>						
 					<div class="experience-description">										
-						<a href="https://github.com/HerndonE/Battlezone-Missions" target="_blank" rel="noreferrer"><div class="job-title">Battlezone Combat Commander: Lost Missions Campaign</div></a>											
+						<a href="https://github.com/HerndonE/Battlezone-Missions" target="_blank" rel="noreferrer"><div class="job-title">Battlezone Combat Commander: Lost Missions Campaign <span>&#8599;</span> </div></a>											
 							Introducing 5 new missions for Battlezone Combat Commander; follow the ISDF on their pursuit to destroy the Scion. This fan made campaign branches parallel with the ISDF campaign bringing a new adventure for the game.
 							<div class="tags">
 								<span class="tag">Lua</span>

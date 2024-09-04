@@ -106,6 +106,7 @@ li::marker {
   padding-right: 30px;
   padding-left: 10px;
   white-space: nowrap;
+  color: rgb(230, 230, 230);
 }
 
 .experience-description {
