@@ -1,10 +1,14 @@
 import "./App.css";
 import "./styles.scss";
 import CustomNav from "./components/CustomNav.js";
-import { TagContainer } from "./components/TagData.js";
-import Tags from "./components/Tags.js";
-import { ExpierenceContainer } from "./components/ExpierenceData.js";
-import Expierence from "./components/Expierence.js";
+import { ExperienceTagContainer } from "./components/Expierence/ExpierenceTagData.js";
+import ExperienceTags from "./components/Expierence/ExpierenceTags.js";
+import { ExpierenceContainer } from "./components/Expierence/ExpierenceData.js";
+import Expierence from "./components/Expierence/Expierence.js";
+import { ProjectTagContainer } from "./components/Projects/ProjectTagData.js";
+import ProjectTags from "./components/Projects/ProjectTags.js";
+import { ProjectsContainer } from "./components/Projects/ProjectsData.js";
+import Projects from "./components/Projects/Projects.js";
 
 function App() {
   const handleClick = (id) => {
@@ -64,7 +68,10 @@ function App() {
                     AllExpierences={ExpierenceContainer}
                     IndexOfAllExpierences={0}
                   />
-                  <Tags AllTags={TagContainer} IndexOfAllTags={0} />
+                  <ExperienceTags
+                    AllTags={ExperienceTagContainer}
+                    IndexOfAllTags={0}
+                  />
                 </div>
               </div>
               <div class="experience-entry">
@@ -87,11 +94,14 @@ function App() {
                     AllExpierences={ExpierenceContainer}
                     IndexOfAllExpierences={1}
                   />
-                  <Tags AllTags={TagContainer} IndexOfAllTags={1} />
+                  <ExperienceTags
+                    AllTags={ExperienceTagContainer}
+                    IndexOfAllTags={1}
+                  />
                 </div>
               </div>
             </p>
-            SEE FULL RESUME HERE
+            SEE FULL EXPIERENCE HERE <span>&#8599;</span>{" "}
           </div>
           <div id="projects" className="section">
             <p className="custom-paragraph">
@@ -116,9 +126,14 @@ function App() {
                       <span>&#8599;</span>{" "}
                     </div>
                   </a>
-                  A Discord bot communicates with people and players between
-                  Discord and Minecraft.
-                  <Tags AllTags={TagContainer} IndexOfAllTags={2} />
+                  <Projects
+                    AllProjects={ProjectsContainer}
+                    IndexOfAllProjects={0}
+                  />
+                  <ProjectTags
+                    AllTags={ProjectTagContainer}
+                    IndexOfAllTags={0}
+                  />
                 </div>
               </div>
               <div class="experience-entry">
@@ -141,8 +156,14 @@ function App() {
                       SSMTP Messenger <span>&#8599;</span>{" "}
                     </div>
                   </a>
-                  A simple way for users to use a send-only sendmail emulator.
-                  <Tags AllTags={TagContainer} IndexOfAllTags={3} />
+                  <Projects
+                    AllProjects={ProjectsContainer}
+                    IndexOfAllProjects={1}
+                  />
+                  <ProjectTags
+                    AllTags={ProjectTagContainer}
+                    IndexOfAllTags={1}
+                  />
                 </div>
               </div>
               <div class="experience-entry">
@@ -166,13 +187,16 @@ function App() {
                       <span>&#8599;</span>{" "}
                     </div>
                   </a>
-                  Introducing 5 new missions for Battlezone Combat Commander;
-                  follow the ISDF on their pursuit to destroy the Scion. This
-                  fan made campaign branches parallel with the ISDF campaign
-                  bringing a new adventure for the game.
-                  <Tags AllTags={TagContainer} IndexOfAllTags={4} />
+                  <Projects
+                    AllProjects={ProjectsContainer}
+                    IndexOfAllProjects={0}
+                  />
+                  <ProjectTags
+                    AllTags={ProjectTagContainer}
+                    IndexOfAllTags={2}
+                  />
                 </div>
-                SEE FULL PROJECTS HERE
+                SEE FULL PROJECTS HERE <span>&#8599;</span>{" "}
               </div>
             </p>
           </div>

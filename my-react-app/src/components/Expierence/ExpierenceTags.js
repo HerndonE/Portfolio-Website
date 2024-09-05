@@ -1,9 +1,9 @@
-import "../App.css";
+import "../../App.css";
 
-function Tags({ AllTags, IndexOfAllTags }) {
+function ExperienceTags({ AllTags, IndexOfAllTags }) {
   // Validate index
   if (IndexOfAllTags < 0 || IndexOfAllTags >= AllTags?.length) {
-    return <div>No tags available for this index.</div>;
+    return <div>No tags available for this job.</div>;
   }
 
   // Get tags for the given index
@@ -23,4 +23,4 @@ function Tags({ AllTags, IndexOfAllTags }) {
   );
 }
 
-export default Tags;
+export default ExperienceTags;
