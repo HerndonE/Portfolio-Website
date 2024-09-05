@@ -23,6 +23,7 @@ function App() {
         <CustomNav
           li={[["About"], ["Experience"], ["Projects"]]}
           handleClick={handleClick} // Pass handleClick function to CustomNav
+          // <a href="C++" />{" "} <img src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white" /> <a href="Python" />{" "}
         />
         <div className="sections-container">
           <div id="about" className="section">
@@ -60,7 +61,7 @@ function App() {
                     className="link"
                   >
                     <div className="job-title">
-                      Software Engineer - Mighty Oak Medical
+                      Software Engineer - Mighty Oak Medical{" "}
                       <span>&#8599;</span>
                     </div>
                   </a>
@@ -101,7 +102,9 @@ function App() {
                 </div>
               </div>
             </p>
-            SEE FULL EXPIERENCE HERE <span>&#8599;</span>{" "}
+            <div className="link-other">
+              SEE FULL EXPIERENCE HERE <span>&#8599;</span>{" "}
+            </div>
           </div>
           <div id="projects" className="section">
             <p className="custom-paragraph">
@@ -189,14 +192,16 @@ function App() {
                   </a>
                   <Projects
                     AllProjects={ProjectsContainer}
-                    IndexOfAllProjects={0}
+                    IndexOfAllProjects={2}
                   />
                   <ProjectTags
                     AllTags={ProjectTagContainer}
                     IndexOfAllTags={2}
                   />
                 </div>
-                SEE FULL PROJECTS HERE <span>&#8599;</span>{" "}
+              </div>
+              <div className="link-other">
+                SEE FULL PROJECTS HERE <span>&#8599;</span>
               </div>
             </p>
           </div>

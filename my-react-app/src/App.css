@@ -193,3 +193,9 @@ li::marker {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
   z-index: 1; /* Ensure the hover box is above other content */
 }
+
+.link-other{
+  padding-top: 10px;
+  padding-left: 250px;
+  display: flex;
+}
