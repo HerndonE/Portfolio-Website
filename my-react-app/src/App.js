@@ -2,14 +2,10 @@ import "./App.css";
 import "./styles.scss";
 import CustomNav from "./components/CustomNav.js";
 import { TagContainer } from "./components/TagData.js";
-import { useEffect } from "react";
+
 import Tags from "./components/Tags.js";
 
 function App() {
-  useEffect(() => {
-    document.title = "Ethan Herndon";
-  }, []);
-
   const handleClick = (id) => {
     const element = document.getElementById(id);
     if (element) {
