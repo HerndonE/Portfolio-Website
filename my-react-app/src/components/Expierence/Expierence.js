@@ -12,7 +12,6 @@ function Expierence({ AllExpierences, IndexOfAllExpierences }) {
   // Get expierence for the given index
   const expierences = AllExpierences[IndexOfAllExpierences] || [];
 
-  console.log(expierences);
   return (
     <div className="ul">
       {expierences.map((expierence, index) => {

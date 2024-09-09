@@ -9,7 +9,6 @@ function Projects({ AllProjects, IndexOfAllProjects }) {
   // Get projects for the given index
   const projects = AllProjects[IndexOfAllProjects] || [];
 
-  console.log(projects);
   return (
     <div className="ul">
       {projects.map((project, index) => {

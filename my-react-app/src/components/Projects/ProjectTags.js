@@ -9,7 +9,6 @@ function ProjectTags({ AllTags, IndexOfAllTags }) {
   // Get projects tags for the given index
   const tags = AllTags[IndexOfAllTags] || [];
 
-  console.log(tags);
   return (
     <div className="tags">
       {tags.map((tag, index) => {
