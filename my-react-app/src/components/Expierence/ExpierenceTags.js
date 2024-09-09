@@ -1,23 +1,24 @@
 import "../../App.css";
-import React, { useEffect, useRef, useMemo } from "react";
+import React, { useMemo, useState } from "react";
 
 function ExperienceTags({ AllTags, IndexOfAllTags }) {
+  const [showMore, setShowMore] = useState(false);
   const tags = useMemo(() => {
-    return IndexOfAllTags >= 0 && IndexOfAllTags < AllTags?.length
-      ? AllTags[IndexOfAllTags] || []
-      : [];
+    if (IndexOfAllTags >= 0 && IndexOfAllTags < AllTags?.length) {
+      return AllTags[IndexOfAllTags] || [];
+    }
+    return [];
   }, [AllTags, IndexOfAllTags]);
 
-  const hasLogged = useRef(false);
+  const displayedTags = useMemo(() => {
+    // Show more tags based on the showMore state
+    const tagsToDisplay = showMore ? tags : tags.slice(0, 7);
+    return tagsToDisplay;
+  }, [tags, showMore]);
 
-  useEffect(() => {
-    if (tags.length > 7 && !hasLogged.current) {
-      console.log("The list of tags is longer than 7:", tags);
-      tags.push("+");
-      hasLogged.current = true;
-      //TOD: Add clickable button object to print more tags. Delete button after
-    }
-  }, [tags]);
+  const handleShowMore = () => {
+    setShowMore(true);
+  };
 
   if (tags.length === 0) {
     return <div>No tags available for this project.</div>;
@@ -25,13 +26,18 @@ function ExperienceTags({ AllTags, IndexOfAllTags }) {
 
   return (
     <div className="tags">
-      {tags.map((tag, index) => {
+      {displayedTags.map((tag, index) => {
         return (
           <div key={tag + index} className="tag">
             {tag}
           </div>
         );
       })}
+      {tags.length > 7 && !showMore && (
+        <button onClick={handleShowMore} className="show-more-button">
+          Click for More Tags
+        </button>
+      )}
     </div>
   );
 }
