@@ -1,23 +1,43 @@
 import "../../App.css";
+import React, { useMemo, useState } from "react";
 
 function ProjectTags({ AllTags, IndexOfAllTags }) {
-  // Validate index
-  if (IndexOfAllTags < 0 || IndexOfAllTags >= AllTags?.length) {
+  const [showMore, setShowMore] = useState(false);
+  const tags = useMemo(() => {
+    if (IndexOfAllTags >= 0 && IndexOfAllTags < AllTags?.length) {
+      return AllTags[IndexOfAllTags] || [];
+    }
+    return [];
+  }, [AllTags, IndexOfAllTags]);
+
+  const displayedTags = useMemo(() => {
+    // Show more tags based on the showMore state
+    const tagsToDisplay = showMore ? tags : tags.slice(0, 7);
+    return tagsToDisplay;
+  }, [tags, showMore]);
+
+  const handleShowMore = () => {
+    setShowMore(true);
+  };
+
+  if (tags.length === 0) {
     return <div>No tags available for this project.</div>;
   }
 
-  // Get projects tags for the given index
-  const tags = AllTags[IndexOfAllTags] || [];
-
   return (
     <div className="tags">
-      {tags.map((tag, index) => {
+      {displayedTags.map((tag, index) => {
         return (
           <div key={tag + index} className="tag">
             {tag}
           </div>
         );
       })}
+      {tags.length > 7 && !showMore && (
+        <button onClick={handleShowMore} className="show-more-button">
+          Click for More Tags
+        </button>
+      )}
     </div>
   );
 }
