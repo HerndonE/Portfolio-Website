@@ -200,6 +200,11 @@ li::marker {
   display: flex;
 }
 
+.link:hover .link-other {
+  color: lightblue;
+}
+
+
 .show-more-button {
   background-color: #132f4a;
   color: #58dad4;

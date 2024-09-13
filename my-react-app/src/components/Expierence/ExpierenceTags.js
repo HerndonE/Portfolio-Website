@@ -25,6 +25,7 @@ function ExperienceTags({ AllTags, IndexOfAllTags }) {
   }
 
   return (
+    // TODO: Adjust tag class to go to a new line if there is more than X in one row
     <div className="tags">
       {displayedTags.map((tag, index) => {
         return (

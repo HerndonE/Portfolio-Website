@@ -102,9 +102,16 @@ function App() {
                 </div>
               </div>
             </p>
-            <div className="link-other">
-              SEE FULL EXPIERENCE HERE <span>&#8599;</span>{" "}
-            </div>
+            <a
+              href="ADD NEW PAGE HERE"
+              target="_blank"
+              rel="noreferrer"
+              className="link"
+            >
+              <div className="link-other">
+                SEE FULL EXPIERENCE HERE <span>&#8599;</span>{" "}
+              </div>
+            </a>
           </div>
           <div id="projects" className="section">
             <p className="custom-paragraph">
@@ -200,9 +207,16 @@ function App() {
                   />
                 </div>
               </div>
-              <div className="link-other">
-                SEE FULL PROJECTS HERE <span>&#8599;</span>
-              </div>
+              <a
+                href="ADD NEW PAGE HERE"
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+              >
+                <div className="link-other">
+                  SEE FULL PROJECTS HERE <span>&#8599;</span>
+                </div>
+              </a>
             </p>
           </div>
         </div>
