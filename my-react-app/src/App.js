@@ -17,6 +17,7 @@ function App() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <>
       <div className="app-container">
@@ -46,6 +47,7 @@ function App() {
                 <li>Flutter</li>
                 <li>Discord.py</li>
                 <li>SQL</li>
+                <li>React</li>
               </div>
             </p>
           </div>
@@ -208,7 +210,7 @@ function App() {
                 </div>
               </div>
               <a
-                href="ADD NEW PAGE HERE"
+                href="/products"
                 target="_blank"
                 rel="noreferrer"
                 className="link"
