@@ -80,7 +80,7 @@ li::marker {
 	display: grid;
 	grid-template-columns: auto auto;
 	justify-content: left;
-	margin-left: 210px;
+	margin-left: 20px;
 	padding-right: 20px;
 	column-gap:50px; /* Adjust this value as needed */
   }
