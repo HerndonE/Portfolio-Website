@@ -70,7 +70,6 @@ const Home = () => (
                   rel="noreferrer"
                   className="link"
                 >
-                  <Navbar />
                   <div className="job-title">
                     Software Engineer - Mighty Oak Medical <span>&#8599;</span>
                   </div>
@@ -119,7 +118,8 @@ const Home = () => (
             className="link"
           >
             <div className="link-other">
-              SEE FULL EXPIERENCE HERE <span>&#8599;</span>{" "}
+              SEE FULL EXPIERENCE <NavToXp />
+              <span>&#8599;</span>{" "}
             </div>
           </a>
         </div>
@@ -215,7 +215,8 @@ const Home = () => (
               className="link"
             >
               <div className="link-other">
-                SEE FULL PROJECTS HERE <span>&#8599;</span>
+                SEE FULL PROJECTS <NavToProjects />
+                <span>&#8599;</span>
               </div>
             </a>
           </p>
@@ -225,28 +226,43 @@ const Home = () => (
   </>
 );
 
-// About Component
-const About = () => <h2>About Page</h2>;
+// Expierence Component
+const ExpierencePage = () => <h2>Expierence Page</h2>;
 
-// Contact Component
-const Contact = () => <h2>Contact Page</h2>;
+// Project Component
+const ProjectsPage = () => <h2>Project Page</h2>;
 
 // NotFound Component
 const NotFound = () => <h2>404 - Page Not Found</h2>;
 
 // Navbar Component
-const Navbar = () => {
+const NavToXp = () => {
   const location = useLocation();
 
-  // Hide navbar on About page
-  if (location.pathname === "/about") {
+  // Hide navbar on Expierence page
+  if (location.pathname === "/expierence") {
     return null;
   }
 
   return (
     <nav>
-      <Link to="/">Home</Link> | <Link to="/about">About</Link> |{" "}
-      <Link to="/contact">Contact</Link>
+      <Link to="/expierence">HERE</Link>
+    </nav>
+  );
+};
+
+// Navbar Component
+const NavToProjects = () => {
+  const location = useLocation();
+
+  // Hide navbar on Projects page
+  if (location.pathname === "/projects") {
+    return null;
+  }
+
+  return (
+    <nav>
+      <Link to="/projects">HERE</Link>
     </nav>
   );
 };
@@ -254,18 +270,18 @@ const Navbar = () => {
 // App Component
 const App = () => {
   const location = useLocation();
-  const hideContent = location.pathname === "/about";
+  const hideContent = location.pathname === "/expierence";
 
   return (
     <div>
       {!hideContent && (
         <Routes>
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       )}
-      {hideContent && <About />}
+      {hideContent && <ExpierencePage />}
     </div>
   );
 };
