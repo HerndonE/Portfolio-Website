@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Link,
   useLocation,
 } from "react-router-dom";
 import "./App.css";
@@ -111,14 +110,9 @@ const Home = () => (
               </div>
             </div>
           </p>
-          <a
-            href="ADD NEW PAGE HERE"
-            target="_blank"
-            rel="noreferrer"
-            className="link"
-          >
+          <a href="/expierence" className="link">
             <div className="link-other">
-              SEE FULL EXPIERENCE <NavToXp />
+              SEE FULL EXPIERENCE HERE
               <span>&#8599;</span>{" "}
             </div>
           </a>
@@ -208,14 +202,9 @@ const Home = () => (
                 <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={2} />
               </div>
             </div>
-            <a
-              href="/products"
-              target="_blank"
-              rel="noreferrer"
-              className="link"
-            >
+            <a href="/projects" className="link">
               <div className="link-other">
-                SEE FULL PROJECTS <NavToProjects />
+                SEE FULL PROJECTS HERE
                 <span>&#8599;</span>
               </div>
             </a>
@@ -234,38 +223,6 @@ const ProjectsPage = () => <h2>Project Page</h2>;
 
 // NotFound Component
 const NotFound = () => <h2>404 - Page Not Found</h2>;
-
-// Navbar Component
-const NavToXp = () => {
-  const location = useLocation();
-
-  // Hide navbar on Expierence page
-  if (location.pathname === "/expierence") {
-    return null;
-  }
-
-  return (
-    <nav>
-      <Link to="/expierence">HERE</Link>
-    </nav>
-  );
-};
-
-// Navbar Component
-const NavToProjects = () => {
-  const location = useLocation();
-
-  // Hide navbar on Projects page
-  if (location.pathname === "/projects") {
-    return null;
-  }
-
-  return (
-    <nav>
-      <Link to="/projects">HERE</Link>
-    </nav>
-  );
-};
 
 // App Component
 const App = () => {
