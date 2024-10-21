@@ -25,6 +25,30 @@ const AtlassianExpierence = [
   "Successfully integrating more than 5 SAML (Security Assertion Markup Language) integrations.",
   "Streamlining SAML change ticket processes through automation.",
 ];
-const ExpierenceContainer = [MightyOakMedicalExpierence, AtlassianExpierence];
+const RohnertParkExpierence = [
+  "Coordinate and participate in various information systems' improvement projects; estimate time and cost; assist with review of completed projects to ensure goals are met and installations are compatible with existing systems.",
+  "Designed and created a remote managing system using Cisco’s Meraki management MDM software to deploy 50+ configurable iPhones and various other devices to police officers.",
+  "Using Python, I programmed and developed a graphical user interface for the I.T. staff at Rohnert Park Public Safety to easily ping static and dynamic devices on the network that speeds up the troubleshooting process.",
+  "Using Active Directory to create and manage user access and Outlook 2016 for e-mail accounts; perform backups of sensitive government material to hot and cold sites, maintain documentation to ensure that Public Safety and City Hall runs smoothly, assign security levels and passwords, and perform other system administration functions as assigned.",
+  "Developed 30+ project reports and documentation for new or modified software and hardware that enhances the staff work experience at Public Safety.",
+  "Learn and support new software and hardware in a demanding multi-tasking environment.",
+  "Read and comprehend computer hardware and software documentation to solve technical problems. Understand and explain system concepts to non-technical users.",
+  "Deleting criminal evidence on digital devices for record’s keeping.",
+  "Installed key Alcatel switches for Sonoma State University Police. Configured for VLAN, DHCP, Static routing that are still present to this day.",
+];
+const CSUMBExpierence = [
+  "Answering telephone and providing basic network tech support to over 5000 students and faculty at CSUMB.",
+  "Helped students and faculty troubleshoot critical applications and hardware devices in the field to ensure that the learning environment runs with no disturbance.",
+  "Used surveying network equipment and Wifi network signal strength to ensure users have 500 megabit per second download speeds via wireless and 1 gigabit per second speeds via Ethernet.",
+  "Cleaned and maintained over 200 intermediate distribution frame closets on campus. This involves patching, Aruba, Alcatel, Avaya equipment installations and basic switch configurations and wireless adapters.",
+  "Using TeamDynamix to keep track and work on assigned ticket orders.",
+  "Confidently installed numerous network peripherals such as cameras, door locks and Wifi access points.",
+];
+const ExpierenceContainer = [
+  MightyOakMedicalExpierence,
+  AtlassianExpierence,
+  RohnertParkExpierence,
+  CSUMBExpierence,
+];
 
 export { ExpierenceContainer };

@@ -271,6 +271,84 @@ const ExpierencePage = () => (
                 />
               </div>
             </div>
+            <div class="experience-entry">
+              <div class="experience-start-year"> July 2020 - May 2021</div>
+              <div class="experience-description">
+                <div class="company-names">
+                  <a
+                    href="https://www.rpcity.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    <div class="job-title">
+                      Information Systems Technician 1 - City of Rohnert Park{" "}
+                      <span>&#8599;</span>{" "}
+                    </div>
+                  </a>
+                </div>
+                <Expierence
+                  AllExpierences={ExpierenceContainer}
+                  IndexOfAllExpierences={2}
+                />
+                <ExperienceTags
+                  AllTags={ExperienceTagContainer}
+                  IndexOfAllTags={2}
+                />
+              </div>
+            </div>
+            <div class="experience-entry">
+              <div class="experience-start-year"> Sept 2019 - Jun 2020</div>
+              <div class="experience-description">
+                <div class="company-names">
+                  <a
+                    href="https://csumb.edu/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    <div class="job-title">
+                      Information Technology Technician - California State
+                      University, Monterey Bay <span>&#8599;</span>{" "}
+                    </div>
+                  </a>
+                </div>
+                <Expierence
+                  AllExpierences={ExpierenceContainer}
+                  IndexOfAllExpierences={3}
+                />
+                <ExperienceTags
+                  AllTags={ExperienceTagContainer}
+                  IndexOfAllTags={3}
+                />
+              </div>
+            </div>
+            <div class="experience-entry">
+              <div class="experience-start-year"> Apr 2019 - Aug 2019</div>
+              <div class="experience-description">
+                <div class="company-names">
+                  <a
+                    href="https://www.rpcity.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    <div class="job-title">
+                      Information Systems Technician 1 - City of Rohnert Park{" "}
+                      <span>&#8599;</span>{" "}
+                    </div>
+                  </a>
+                </div>
+                <Expierence
+                  AllExpierences={ExpierenceContainer}
+                  IndexOfAllExpierences={2}
+                />
+                <ExperienceTags
+                  AllTags={ExperienceTagContainer}
+                  IndexOfAllTags={2}
+                />
+              </div>
+            </div>
           </p>
         </div>
       </div>
