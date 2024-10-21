@@ -216,7 +216,67 @@ const Home = () => (
 );
 
 // Expierence Component
-const ExpierencePage = () => <h2>Expierence Page</h2>;
+const ExpierencePage = () => (
+  <>
+    <div className="app-container">
+      <div className="sections-container">
+        <div id="experience" className="section">
+          <p className="custom-paragraph">
+            <div class="experience-entry">
+              <div class="experience-start-year">Jan 2022 - PRESENT</div>
+              <div class="experience-description">
+                <a
+                  href="https://mightyoakmedical.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                >
+                  <div className="job-title">
+                    Software Engineer - Mighty Oak Medical <span>&#8599;</span>
+                  </div>
+                </a>
+                <Expierence
+                  AllExpierences={ExpierenceContainer}
+                  IndexOfAllExpierences={0}
+                />
+                <ExperienceTags
+                  AllTags={ExperienceTagContainer}
+                  IndexOfAllTags={0}
+                />
+              </div>
+            </div>
+            <div class="experience-entry">
+              <div class="experience-start-year"> July 2021 - Dec 2021</div>
+              <div class="experience-description">
+                <div class="company-names">
+                  <a
+                    href="https://www.atlassian.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    <div class="job-title">
+                      Junior Technical Support Specialist - Atlassian{" "}
+                      <span>&#8599;</span>{" "}
+                    </div>
+                  </a>
+                </div>
+                <Expierence
+                  AllExpierences={ExpierenceContainer}
+                  IndexOfAllExpierences={1}
+                />
+                <ExperienceTags
+                  AllTags={ExperienceTagContainer}
+                  IndexOfAllTags={1}
+                />
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </>
+);
 
 // Project Component
 const ProjectsPage = () => <h2>Project Page</h2>;
