@@ -25,7 +25,6 @@ const handleClick = (id) => {
 };
 
 // Home Component
-//<Navbar />
 const Home = () => (
   <>
     <div className="app-container">
@@ -357,7 +356,60 @@ const ExpierencePage = () => (
 );
 
 // Project Component
-const ProjectsPage = () => <h2>Project Page</h2>;
+const ProjectsPage = () => {
+  const tableStyle = {
+    width: "100%", // Set the width of the table
+    borderCollapse: "collapse", // Collapse borders
+    margin: "20px 0", // Add some margin
+  };
+
+  const thStyle = {
+    border: "1px solid #ddd", // Border for table headers
+    padding: "8px", // Padding for table headers
+    backgroundColor: "#f2f2f2", // Background color for table headers
+    textAlign: "left", // Align text to the left
+  };
+
+  const tdStyle = {
+    border: "1px solid #ddd", // Border for table cells
+    padding: "8px", // Padding for table cells
+  };
+
+  return (
+    <>
+      <h2>Projects Page</h2>
+
+      <table style={tableStyle}>
+        <thead>
+          <tr>
+            <th style={thStyle}>Year</th>
+            <th style={thStyle}>Project Name</th>
+            <th style={thStyle}>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={tdStyle}>2023</td>
+            <td style={tdStyle}>
+              Discord Bot for Vanilla Minecraft (Java Edition)
+            </td>
+            <td style={tdStyle}>
+              A Discord bot communicates with people and players between Discord
+              and Minecraft.
+            </td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>2020</td>
+            <td style={tdStyle}>SSMTP Messenger</td>
+            <td style={tdStyle}>
+              A simple way for users to use a send-only sendmail emulator.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+  );
+};
 
 // NotFound Component
 const NotFound = () => <h2>404 - Page Not Found</h2>;
