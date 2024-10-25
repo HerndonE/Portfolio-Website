@@ -15,8 +15,6 @@ import Expierence from "./components/Expierence/Expierence.js";
 import { ProjectTagContainer } from "./components/Projects/ProjectTagData.js";
 import ProjectTags from "./components/Projects/ProjectTags.js";
 import { ProjectsContainer } from "./components/Projects/ProjectsData.js";
-import Projects from "./components/Projects/Projects.js";
-import { ProjectsLinksContainer } from "./components/Projects/ProjectLinks.js";
 
 const handleClick = (id) => {
   const element = document.getElementById(id);
@@ -130,20 +128,16 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsLinksContainer[0]}
+                  href={ProjectsContainer[0][0][2]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    Discord Bot for Vanilla Minecraft (Java Edition){" "}
-                    <span>&#8599;</span>{" "}
+                    {ProjectsContainer[0][0][0]} <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                <Projects
-                  AllProjects={ProjectsContainer}
-                  IndexOfAllProjects={0}
-                />
+                {ProjectsContainer[0][0][1]}
                 <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={0} />
               </div>
             </div>
@@ -158,19 +152,16 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsLinksContainer[1]}
+                  href={ProjectsContainer[1][0][2]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    SSMTP Messenger <span>&#8599;</span>{" "}
+                    {ProjectsContainer[1][0][0]} <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                <Projects
-                  AllProjects={ProjectsContainer}
-                  IndexOfAllProjects={1}
-                />
+                {ProjectsContainer[1][0][1]}
                 <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={1} />
               </div>
             </div>
@@ -185,20 +176,16 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsLinksContainer[2]}
+                  href={ProjectsContainer[2][0][2]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    Battlezone Combat Commander: Lost Missions Campaign{" "}
-                    <span>&#8599;</span>{" "}
+                    {ProjectsContainer[2][0][0]} <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                <Projects
-                  AllProjects={ProjectsContainer}
-                  IndexOfAllProjects={2}
-                />
+                {ProjectsContainer[2][0][1]}
                 <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={2} />
               </div>
             </div>
@@ -393,78 +380,55 @@ const ProjectsPage = () => {
         <tbody>
           <tr>
             <td style={tdStyle}>2023</td>
-            <td style={tdStyle}>{ProjectsLinksContainer[0][0][0]}</td>
-            <td style={tdStyle}>
-              <Projects
-                AllProjects={ProjectsContainer}
-                IndexOfAllProjects={0}
-              />
-            </td>
+            <td style={tdStyle}>{ProjectsContainer[0][0][0]}</td>
+            <td style={tdStyle}>{ProjectsContainer[0][0][1]}</td>
             <td style={tdStyle}>
               <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={0} />
             </td>
             <td style={tdStyle}>
               <a
-                href={ProjectsLinksContainer[0][0][1]}
+                href={ProjectsContainer[0][0][2]}
                 target="_blank"
                 rel="noreferrer"
                 className="link"
               >
-                {ProjectsLinksContainer[0][0][1]}
+                {ProjectsContainer[0][0][2]}
               </a>
             </td>
           </tr>
           <tr>
             <td style={tdStyle}>2020</td>
-            <td style={tdStyle}>SSMTP Messenger</td>
-            <td style={tdStyle}>
-              <Projects
-                AllProjects={ProjectsContainer}
-                IndexOfAllProjects={1}
-              />
-            </td>
+            <td style={tdStyle}>{ProjectsContainer[1][0][0]}</td>
+            <td style={tdStyle}>{ProjectsContainer[1][0][1]}</td>
             <td style={tdStyle}>
               <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={1} />
             </td>
             <td style={tdStyle}>
               <a
-                href={ProjectsLinksContainer[1]}
+                href={ProjectsContainer[1][0][2]}
                 target="_blank"
                 rel="noreferrer"
                 className="link"
               >
-                <Projects
-                  AllProjects={ProjectsLinksContainer}
-                  IndexOfAllProjects={1}
-                />
+                {ProjectsContainer[1][0][2]}
               </a>
             </td>
           </tr>
           <tr>
             <td style={tdStyle}>2020</td>
-            <td style={tdStyle}>
-              Battlezone Combat Commander: Lost Missions Campaign
-            </td>
-            <td style={tdStyle}>
-              <Projects
-                AllProjects={ProjectsContainer}
-                IndexOfAllProjects={2}
-              />
-            </td>
+            <td style={tdStyle}>{ProjectsContainer[2][0][0]}</td>
+            <td style={tdStyle}>{ProjectsContainer[2][0][1]}</td>
             <td style={tdStyle}>
               <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={2} />
             </td>
             <td style={tdStyle}>
               <a
-                href={ProjectsLinksContainer[2]}
+                href={ProjectsContainer[2][0][2]}
                 target="_blank"
                 rel="noreferrer"
                 className="link"
               >
-                <Projects
-                  AllProjects={ProjectsLinksContainer}
-                  IndexOfAllProjects={2}
-                />
+                {ProjectsContainer[2][0][2]}
               </a>
             </td>
           </tr>
