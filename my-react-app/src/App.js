@@ -128,16 +128,16 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsContainer[0][0][2]}
+                  href={ProjectsContainer[0][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    {ProjectsContainer[0][0][0]} <span>&#8599;</span>{" "}
+                    {ProjectsContainer[0][0][1]} <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                {ProjectsContainer[0][0][1]}
+                {ProjectsContainer[0][0][2]}
                 <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={0} />
               </div>
             </div>
@@ -152,16 +152,16 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsContainer[1][0][2]}
+                  href={ProjectsContainer[5][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    {ProjectsContainer[1][0][0]} <span>&#8599;</span>{" "}
+                    {ProjectsContainer[5][0][1]} <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                {ProjectsContainer[1][0][1]}
+                {ProjectsContainer[5][0][2]}
                 <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={1} />
               </div>
             </div>
@@ -176,16 +176,16 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsContainer[2][0][2]}
+                  href={ProjectsContainer[6][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    {ProjectsContainer[2][0][0]} <span>&#8599;</span>{" "}
+                    {ProjectsContainer[6][0][1]} <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                {ProjectsContainer[2][0][1]}
+                {ProjectsContainer[6][0][2]}
                 <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={2} />
               </div>
             </div>
@@ -366,7 +366,6 @@ const ProjectsPage = () => {
   return (
     <>
       <h2>Projects Page</h2>
-
       <table style={tableStyle}>
         <thead>
           <tr>
@@ -378,60 +377,29 @@ const ProjectsPage = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td style={tdStyle}>2023</td>
-            <td style={tdStyle}>{ProjectsContainer[0][0][0]}</td>
-            <td style={tdStyle}>{ProjectsContainer[0][0][1]}</td>
-            <td style={tdStyle}>
-              <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={0} />
-            </td>
-            <td style={tdStyle}>
-              <a
-                href={ProjectsContainer[0][0][2]}
-                target="_blank"
-                rel="noreferrer"
-                className="link"
-              >
-                {ProjectsContainer[0][0][2]}
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td style={tdStyle}>2020</td>
-            <td style={tdStyle}>{ProjectsContainer[1][0][0]}</td>
-            <td style={tdStyle}>{ProjectsContainer[1][0][1]}</td>
-            <td style={tdStyle}>
-              <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={1} />
-            </td>
-            <td style={tdStyle}>
-              <a
-                href={ProjectsContainer[1][0][2]}
-                target="_blank"
-                rel="noreferrer"
-                className="link"
-              >
-                {ProjectsContainer[1][0][2]}
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td style={tdStyle}>2020</td>
-            <td style={tdStyle}>{ProjectsContainer[2][0][0]}</td>
-            <td style={tdStyle}>{ProjectsContainer[2][0][1]}</td>
-            <td style={tdStyle}>
-              <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={2} />
-            </td>
-            <td style={tdStyle}>
-              <a
-                href={ProjectsContainer[2][0][2]}
-                target="_blank"
-                rel="noreferrer"
-                className="link"
-              >
-                {ProjectsContainer[2][0][2]}
-              </a>
-            </td>
-          </tr>
+          {ProjectsContainer.map((project, projectIndex) => (
+            <tr key={projectIndex}>
+              <td style={tdStyle}>{project[0][0]}</td>
+              <td style={tdStyle}>{project[0][1]}</td>
+              <td style={tdStyle}>{project[0][2]}</td>
+              <td style={tdStyle}>
+                <ProjectTags
+                  AllTags={ProjectTagContainer}
+                  IndexOfAllTags={projectIndex}
+                />
+              </td>
+              <td style={tdStyle}>
+                <a
+                  href={project[0][3]}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                >
+                  {project[0][3]}
+                </a>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </>
