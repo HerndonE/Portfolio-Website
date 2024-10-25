@@ -16,6 +16,7 @@ import { ProjectTagContainer } from "./components/Projects/ProjectTagData.js";
 import ProjectTags from "./components/Projects/ProjectTags.js";
 import { ProjectsContainer } from "./components/Projects/ProjectsData.js";
 import Projects from "./components/Projects/Projects.js";
+import { ProjectsLinksContainer } from "./components/Projects/ProjectLinks.js";
 
 const handleClick = (id) => {
   const element = document.getElementById(id);
@@ -129,7 +130,7 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href="https://github.com/HerndonE/Vanilla-Minecraft-Discord-Bot"
+                  href={ProjectsLinksContainer[0]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
@@ -157,7 +158,7 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href="https://github.com/HerndonE/SSMTP-Messenger"
+                  href={ProjectsLinksContainer[1]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
@@ -184,7 +185,7 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href="https://github.com/HerndonE/Battlezone-Missions"
+                  href={ProjectsLinksContainer[2]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
@@ -385,24 +386,86 @@ const ProjectsPage = () => {
             <th style={thStyle}>Year</th>
             <th style={thStyle}>Project Name</th>
             <th style={thStyle}>Description</th>
+            <th style={thStyle}>Built/Designed with</th>
+            <th style={thStyle}>Project Link</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td style={tdStyle}>2023</td>
+            <td style={tdStyle}>{ProjectsLinksContainer[0][0][0]}</td>
             <td style={tdStyle}>
-              Discord Bot for Vanilla Minecraft (Java Edition)
+              <Projects
+                AllProjects={ProjectsContainer}
+                IndexOfAllProjects={0}
+              />
             </td>
             <td style={tdStyle}>
-              A Discord bot communicates with people and players between Discord
-              and Minecraft.
+              <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={0} />
+            </td>
+            <td style={tdStyle}>
+              <a
+                href={ProjectsLinksContainer[0][0][1]}
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+              >
+                {ProjectsLinksContainer[0][0][1]}
+              </a>
             </td>
           </tr>
           <tr>
             <td style={tdStyle}>2020</td>
             <td style={tdStyle}>SSMTP Messenger</td>
             <td style={tdStyle}>
-              A simple way for users to use a send-only sendmail emulator.
+              <Projects
+                AllProjects={ProjectsContainer}
+                IndexOfAllProjects={1}
+              />
+            </td>
+            <td style={tdStyle}>
+              <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={1} />
+            </td>
+            <td style={tdStyle}>
+              <a
+                href={ProjectsLinksContainer[1]}
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+              >
+                <Projects
+                  AllProjects={ProjectsLinksContainer}
+                  IndexOfAllProjects={1}
+                />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td style={tdStyle}>2020</td>
+            <td style={tdStyle}>
+              Battlezone Combat Commander: Lost Missions Campaign
+            </td>
+            <td style={tdStyle}>
+              <Projects
+                AllProjects={ProjectsContainer}
+                IndexOfAllProjects={2}
+              />
+            </td>
+            <td style={tdStyle}>
+              <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={2} />
+            </td>
+            <td style={tdStyle}>
+              <a
+                href={ProjectsLinksContainer[2]}
+                target="_blank"
+                rel="noreferrer"
+                className="link"
+              >
+                <Projects
+                  AllProjects={ProjectsLinksContainer}
+                  IndexOfAllProjects={2}
+                />
+              </a>
             </td>
           </tr>
         </tbody>
