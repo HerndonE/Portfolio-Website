@@ -1,12 +1,16 @@
 const MightyOakMedicalTags = [
   "Python",
   "AWS",
+  "EC2",
+  "S3",
   "Javascript",
   "Git",
   "win32com",
   "Flutter",
   "VBA",
   "Automation",
+  "Quality",
+  "Regulatory",
 ];
 const AtlassianTags = [
   "Jira",

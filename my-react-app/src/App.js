@@ -162,7 +162,7 @@ const Home = () => (
                   </div>
                 </a>
                 {ProjectsContainer[5][0][2]}
-                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={1} />
+                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={5} />
               </div>
             </div>
             <div class="experience-entry">
@@ -186,7 +186,7 @@ const Home = () => (
                   </div>
                 </a>
                 {ProjectsContainer[6][0][2]}
-                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={2} />
+                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={6} />
               </div>
             </div>
             <a href="/projects" className="link">
@@ -347,61 +347,72 @@ const ExpierencePage = () => (
 const ProjectsPage = () => {
   const tableStyle = {
     width: "100%", // Set the width of the table
-    borderCollapse: "collapse", // Collapse borders
-    margin: "20px 0", // Add some margin
+    maxWidth: "1400px", // Set a maximum width for the table
+    margin: "50px auto", // Center the table with automatic margins
   };
 
   const thStyle = {
-    border: "1px solid #ddd", // Border for table headers
     padding: "8px", // Padding for table headers
-    backgroundColor: "#f2f2f2", // Background color for table headers
+    color: "#e6e6e6",
     textAlign: "left", // Align text to the left
+    borderBottom: "2px solid #ddd", // Horizontal line below header
   };
 
   const tdStyle = {
-    border: "1px solid #ddd", // Border for table cells
-    padding: "8px", // Padding for table cells
+    padding: "20px", // Padding for table cells
+    borderBottom: "1px solid #ddd", // Horizontal line below each cell
+    width: "1400px",
   };
 
   return (
     <>
-      <h2>Projects Page</h2>
-      <table style={tableStyle}>
-        <thead>
-          <tr>
-            <th style={thStyle}>Year</th>
-            <th style={thStyle}>Project Name</th>
-            <th style={thStyle}>Description</th>
-            <th style={thStyle}>Built/Designed with</th>
-            <th style={thStyle}>Project Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          {ProjectsContainer.map((project, projectIndex) => (
-            <tr key={projectIndex}>
-              <td style={tdStyle}>{project[0][0]}</td>
-              <td style={tdStyle}>{project[0][1]}</td>
-              <td style={tdStyle}>{project[0][2]}</td>
-              <td style={tdStyle}>
-                <ProjectTags
-                  AllTags={ProjectTagContainer}
-                  IndexOfAllTags={projectIndex}
-                />
-              </td>
-              <td style={tdStyle}>
-                <a
-                  href={project[0][3]}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link"
-                >
-                  {project[0][3]}
-                </a>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="app-container">
+        <div className="sections-container">
+          <h2>Projects Page</h2>
+          <div class="table-entry">
+            <table style={tableStyle}>
+              <thead>
+                <tr>
+                  <th style={thStyle}>Year</th>
+                  <th style={thStyle}>Project Name</th>
+                  <th style={thStyle}>Description</th>
+                  <th style={thStyle}>Built/Designed with</th>
+                  <th style={thStyle}>Project Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                {ProjectsContainer.map((project, projectIndex) => (
+                  <tr key={projectIndex}>
+                    <td style={tdStyle}>{project[0][0]}</td>
+                    <td style={{ ...tdStyle, color: "#e6e6e6" }}>
+                      {project[0][1]}
+                    </td>
+                    <td style={tdStyle}>{project[0][2]}</td>
+                    <td style={tdStyle}>
+                      <ProjectTags
+                        AllTags={ProjectTagContainer}
+                        IndexOfAllTags={projectIndex}
+                      />
+                    </td>
+                    <td style={tdStyle}>
+                      <a
+                        href={project[0][3]}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link"
+                      >
+                        <div class="job-title">
+                          {project[0][3]} <span>&#8599;</span>{" "}
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

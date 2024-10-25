@@ -91,6 +91,24 @@ li::marker {
 
   /********************************/
 
+.table-entry {
+  display: flex; /* Use flexbox for layout */
+  gap: 10px; /* Space between items */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 50px; /* Space below each entry */
+  position: relative; /* Required for positioning the hover box */
+}
+
+.table-entry > div {
+  flex: 1; /* Allow each child to grow equally */
+}
+
+.table-entry > div:first-child {
+  width: 100px; /* Fixed width for the first item */
+}
+  
+
+
 .experience-entry {
   display: grid;
   grid-template-columns: 180px auto;
