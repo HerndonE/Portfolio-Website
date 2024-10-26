@@ -152,17 +152,17 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsContainer[5][0][3]}
+                  href={ProjectsContainer[6][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    {ProjectsContainer[5][0][1]} <span>&#8599;</span>{" "}
+                    {ProjectsContainer[6][0][1]} <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                {ProjectsContainer[5][0][2]}
-                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={5} />
+                {ProjectsContainer[6][0][2]}
+                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={6} />
               </div>
             </div>
             <div class="experience-entry">
@@ -176,17 +176,17 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsContainer[6][0][3]}
+                  href={ProjectsContainer[7][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    {ProjectsContainer[6][0][1]} <span>&#8599;</span>{" "}
+                    {ProjectsContainer[7][0][1]} <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                {ProjectsContainer[6][0][2]}
-                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={6} />
+                {ProjectsContainer[7][0][2]}
+                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={7} />
               </div>
             </div>
             <a href="/projects" className="link">
@@ -401,7 +401,7 @@ const ProjectsPage = () => {
                         rel="noreferrer"
                         className="link"
                       >
-                        <div class="job-title">
+                        <div class="project-link">
                           {project[0][3]} <span>&#8599;</span>{" "}
                         </div>
                       </a>

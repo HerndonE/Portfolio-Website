@@ -43,6 +43,15 @@ const RosterBoard = [
   ],
 ];
 
+const CurrencyConverter = [
+  [
+    "2021",
+    "Currency Converter",
+    "A simple android app that converts currency between the US and Brazil.",
+    "https://github.com/HerndonE/Android-US-BRL-Converter",
+  ],
+];
+
 const SSMTPMessenger = [
   [
     "2020",
@@ -57,6 +66,23 @@ const BZCCLostMissions = [
     "Battlezone Combat Commander: Lost Missions Campaign",
     "Introducing 5 new missions for Battlezone Combat Commander; follow the ISDF on their pursuit to destroy the Scion. This fan made campaign branches parallel with the ISDF campaign bringing a new adventure for the game.",
     "https://github.com/HerndonE/Battlezone-Missions",
+  ],
+];
+const GortBot = [
+  [
+    "2020",
+    "Gort Bot for Discord",
+    "A little Discord bot is a multi-purpose bot focusing on enhancing the discord experience for all users.",
+    "https://github.com/HerndonE/Gort-Bot",
+  ],
+];
+
+const GonzalesApp = [
+  [
+    "2020",
+    "City of Gonzales App",
+    "The City of Gonzales partnered with the Computer Science Department at California State University Monterey Bay to make a mobile application for its community to help eliminate the Digital Divide. This application aims to achieve community feedback while having access to important information and announcements from the Gonzales city government through their android mobile devices.",
+    "https://github.com/HerndonE/Gonzales-App?tab=readme-ov-file",
   ],
 ];
 
@@ -75,8 +101,11 @@ const ProjectsContainer = [
   MacroPad,
   BZCCColorEditor,
   RosterBoard,
+  CurrencyConverter,
   SSMTPMessenger,
   BZCCLostMissions,
+  GortBot,
+  GonzalesApp,
   BZCCColorSelector,
 ];
 
