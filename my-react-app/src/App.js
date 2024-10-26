@@ -368,7 +368,6 @@ const ProjectsPage = () => {
     <>
       <div className="app-container">
         <div className="sections-container">
-          <h2>Projects Page</h2>
           <div class="table-entry">
             <table style={tableStyle}>
               <thead>
