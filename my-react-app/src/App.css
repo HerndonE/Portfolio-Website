@@ -206,6 +206,7 @@ li::marker {
 .tag {
   background-color: #132f4a;
   color: #58dad4;
+  font-weight: bold;
   padding: 8px 12px; /* Adjust padding to increase size */
   margin-right: 8px; /* Increase margin if needed */
   font-size: 14px; /* Increase font size */
@@ -245,6 +246,7 @@ li::marker {
 .show-more-button {
   background-color: #132f4a;
   color: #58dad4;
+  font-weight: bold;
   padding: 8px 12px; /* Adjust padding to increase size */
   margin-right: 8px; /* Increase margin if needed */
   font-size: 14px; /* Increase font size */

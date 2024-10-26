@@ -349,19 +349,19 @@ const ProjectsPage = () => {
     width: "100%", // Set the width of the table
     maxWidth: "1400px", // Set a maximum width for the table
     margin: "50px auto", // Center the table with automatic margins
+    borderCollapse: "collapse",
   };
 
   const thStyle = {
-    padding: "8px", // Padding for table headers
+    padding: "10px", // Adjust padding for headers
     color: "#e6e6e6",
-    textAlign: "left", // Align text to the left
+    textAlign: "left",
     borderBottom: "2px solid #ddd", // Horizontal line below header
   };
 
   const tdStyle = {
     padding: "20px", // Padding for table cells
     borderBottom: "1px solid #ddd", // Horizontal line below each cell
-    width: "1400px",
   };
 
   return (

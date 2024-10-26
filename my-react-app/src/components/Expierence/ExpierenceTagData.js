@@ -24,6 +24,7 @@ const AtlassianTags = [
   "Asset Management",
   "Documentation",
   "Customer Service",
+  "Jamf",
 ];
 const RohnertParkTags = [
   "Documentation",
