@@ -107,7 +107,7 @@ const Home = () => (
               </div>
             </div>
           </p>
-          <a href="/expierence" className="link">
+          <a href="#/expierence" className="link">
             <div className="link-other">
               SEE FULL EXPIERENCE HERE
               <span>&#8599;</span>{" "}
@@ -188,7 +188,7 @@ const Home = () => (
                 <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={7} />
               </div>
             </div>
-            <a href="/projects" className="link">
+            <a href="#/projects" className="link">
               <div className="link-other">
                 SEE FULL PROJECTS HERE
                 <span>&#8599;</span>
