@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  HashRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./styles.scss";
 import CustomNav from "./components/CustomNav.js";
@@ -28,7 +23,11 @@ const Home = () => (
   <>
     <div className="app-container">
       <CustomNav
-        li={[["About"], ["Experience"], ["Projects"]]}
+        li={[
+          ["Home", "#/"],
+          ["Experience", "#/experience"],
+          ["Projects", "#/projects"],
+        ]}
         handleClick={handleClick} // Pass handleClick function to CustomNav
         // <a href="C++" />{" "} <img src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white" /> <a href="Python" />{" "}
       />
@@ -421,19 +420,14 @@ const NotFound = () => <h2>404 - Page Not Found</h2>;
 
 // App Component
 const App = () => {
-  const location = useLocation();
-  const hideContent = location.pathname === "/expierence";
-
   return (
     <div>
-      {!hideContent && (
-        <Routes>
-          <Route path="/Portfolio-Website" element={<Home />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      )}
-      {hideContent && <ExpierencePage />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/experience" element={<ExpierencePage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 };
