@@ -1,6 +1,6 @@
 {
   "homepage": "https://herndone.github.io/Portfolio-Website",
-  "name": "my-react-app",
+  "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
