@@ -422,7 +422,7 @@ const NotFound = () => <h2>404 - Page Not Found</h2>;
 // App Component
 const App = () => {
   const location = useLocation();
-  const hideContent = location.pathname === "/experience"; // Fixed spelling here
+  const hideContent = location.pathname === "/expierence";
 
   return (
     <div>
