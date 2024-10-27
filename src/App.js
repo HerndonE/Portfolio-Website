@@ -109,7 +109,7 @@ const Home = () => (
           </p>
           <a href="#/expierence" className="link">
             <div className="link-other">
-              SEE FULL EXPIERENCE HERE
+              SEE FULL EXPERIENCE HERE
               <span>&#8599;</span>{" "}
             </div>
           </a>
@@ -424,8 +424,8 @@ const App = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/experience" element={<ExpierencePage />} />
+        <Route path="projects" element={<ProjectsPage />} />
+        <Route path="expierence" element={<ExpierencePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
