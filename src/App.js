@@ -428,7 +428,7 @@ const App = () => {
     <div>
       {!hideContent && (
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Portfolio-Website" element={<Home />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
