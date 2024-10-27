@@ -433,7 +433,7 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       )}
-      {hideContent && <ExperiencePage />}
+      {hideContent && <ExpierencePage />}
     </div>
   );
 };
