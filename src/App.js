@@ -422,18 +422,18 @@ const NotFound = () => <h2>404 - Page Not Found</h2>;
 // App Component
 const App = () => {
   const location = useLocation();
-  const hideContent = location.pathname === "/expierence";
+  const hideContent = location.pathname === "/experience"; // Fixed spelling here
 
   return (
     <div>
       {!hideContent && (
         <Routes>
-          <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<ProjectsPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       )}
-      {hideContent && <ExpierencePage />}
+      {hideContent && <ExperiencePage />}
     </div>
   );
 };
