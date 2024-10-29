@@ -119,7 +119,7 @@ const Home = () => (
             <div class="experience-entry">
               <div class="project-image">
                 <img
-                  src={`/img/mcd-icon.png`}
+                  src={`${process.env.PUBLIC_URL}/img/mcd-icon.png`}
                   alt="Project Icon"
                   width={100}
                   height={100}
@@ -143,7 +143,7 @@ const Home = () => (
             <div class="experience-entry">
               <div class="project-image">
                 <img
-                  src={`/img/weather-app.png`}
+                  src={`${process.env.PUBLIC_URL}/img/weather-app.png`}
                   alt="Project Icon"
                   width={100}
                   height={100}
