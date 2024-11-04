@@ -236,10 +236,12 @@ li::marker {
   padding-top: 10px;
   padding-left: 250px;
   display: flex;
+  font-weight: bold;
+  color: #58dad4;
 }
 
 .link:hover .link-other {
-  color: lightblue;
+  color: rgb(163, 162, 162);
 }
 
 
