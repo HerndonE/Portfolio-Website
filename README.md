@@ -1,3 +1,8 @@
+<p align="left">
+  <img src="public\favicon.ico" width="100" />
+</p>
+
+
 # Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
