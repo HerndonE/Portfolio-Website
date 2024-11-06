@@ -1,4 +1,4 @@
-const MineCraftBot = ["Python", "PyQt5", "win32com"];
+const MineCraftBot = ["Python", "PyQt5", "win32com", "rcon", "Discord API"];
 const D2PServerUpdate = ["HTML", "paintball2", "documentation"];
 const MacroPad = ["Python", "circuitpython", "macropad", "media", "capture"];
 const BZCCEditor = ["Python", "Steam", "Battlezone"];
@@ -9,6 +9,8 @@ const BZCCLostMissions = ["Lua", "AIP", "BZN", "Battlezone"];
 const GortBot = ["JavaScript", "Discord", "API", "Heroku", "SQL"];
 const GonzalesApp = ["Java", "Android"];
 const BZCCColorSelector = ["Lua", "Battlezone", "Steam", "BZN"];
+const PingTool = ["Python", "Tkinter", "Command Prompt"];
+const HoverTankGame = ["C#", "Unity", "3D"];
 
 const ProjectTagContainer = [
   MineCraftBot,
@@ -22,6 +24,8 @@ const ProjectTagContainer = [
   GortBot,
   GonzalesApp,
   BZCCColorSelector,
+  PingTool,
+  HoverTankGame,
 ];
 
 export { ProjectTagContainer };

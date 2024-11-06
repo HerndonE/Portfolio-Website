@@ -95,6 +95,24 @@ const BZCCColorSelector = [
   ],
 ];
 
+const PingTool = [
+  [
+    "2017",
+    "Ping Interface Tool",
+    "Using Python, created a graphical user interface for I.T. staff at Rohnert Park Public Safety to easily ping static and dynamic devices on the network that speeds up the troubleshooting process.",
+    "",
+  ],
+];
+
+const HoverTankGame = [
+  [
+    "2015",
+    "Hover Tank Space Game",
+    "Utilizing the Unity gaming engine, developed a futuristic 3D hover tank space game that immerses players to take control of a futuristic hover tank and engage in intense aerial combat, destroying enemy invaders with an arsenal of weapon types.",
+    "",
+  ],
+];
+
 const ProjectsContainer = [
   MineCraftBot,
   DP2ServerPage,
@@ -107,6 +125,8 @@ const ProjectsContainer = [
   GortBot,
   GonzalesApp,
   BZCCColorSelector,
+  PingTool,
+  HoverTankGame,
 ];
 
 export { ProjectsContainer };

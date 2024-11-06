@@ -32,6 +32,7 @@ const RohnertParkTags = [
   "Python",
   "Workstation Imaging",
   "Cisco IP Telephony/VoIP",
+  "Cisco Meraki",
   "Asset Management",
   "Networking",
   "Spiceworks",

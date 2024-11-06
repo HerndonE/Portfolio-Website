@@ -394,16 +394,21 @@ const ProjectsPage = () => {
                       />
                     </td>
                     <td style={tdStyle}>
-                      <a
-                        href={project[0][3]}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="link"
-                      >
-                        <div class="project-link">
-                          {project[0][3]} <span>&#8599;</span>{" "}
-                        </div>
-                      </a>
+                      {typeof project[0][3] === "string" &&
+                      project[0][3] !== "" ? (
+                        <a
+                          href={project[0][3]}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="link"
+                        >
+                          <div className="project-link">
+                            {project[0][3]} <span>&#8599;</span>
+                          </div>
+                        </a>
+                      ) : (
+                        <div className="project-link">No link available.</div>
+                      )}
                     </td>
                   </tr>
                 ))}
