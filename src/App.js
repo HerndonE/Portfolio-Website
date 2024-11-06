@@ -25,7 +25,7 @@ const Home = () => (
     <div className="app-container">
       <CustomNav
         li={[
-          ["About", "#/"],
+          ["About", "#/about"],
           ["Experience", "#/experience"],
           ["Projects", "#/projects"],
         ]}

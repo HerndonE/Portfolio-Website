@@ -13,17 +13,11 @@ function Expierence({ AllExpierences, IndexOfAllExpierences }) {
   const expierences = AllExpierences[IndexOfAllExpierences] || [];
 
   return (
-    <div className="ul">
-      {expierences.map((expierence, index) => {
-        return (
-          <li>
-            <div key={expierence + index} className="li">
-              {expierence}
-            </div>
-          </li>
-        );
-      })}
-    </div>
+    <ul>
+      {expierences.map((expierence, index) => (
+        <li key={expierence + index}>{expierence}</li>
+      ))}
+    </ul>
   );
 }
 
