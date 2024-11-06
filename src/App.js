@@ -10,6 +10,7 @@ import Expierence from "./components/Expierence/Expierence.js";
 import { ProjectTagContainer } from "./components/Projects/ProjectTagData.js";
 import ProjectTags from "./components/Projects/ProjectTags.js";
 import { ProjectsContainer } from "./components/Projects/ProjectsData.js";
+import ScrollToTop from "./components/ScrollToTop.js";
 
 const handleClick = (id) => {
   const element = document.getElementById(id);
@@ -24,7 +25,7 @@ const Home = () => (
     <div className="app-container">
       <CustomNav
         li={[
-          ["Home", "#/"],
+          ["About", "#/"],
           ["Experience", "#/experience"],
           ["Projects", "#/projects"],
         ]}
@@ -422,6 +423,7 @@ const NotFound = () => <h2>404 - Page Not Found</h2>;
 const App = () => {
   return (
     <div>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="projects" element={<ProjectsPage />} />
