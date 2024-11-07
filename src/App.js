@@ -30,7 +30,14 @@ const Home = () => (
           ["Projects", "#/projects"],
         ]}
         handleClick={handleClick} // Pass handleClick function to CustomNav
-        // <a href="C++" />{" "} <img src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white" /> <a href="Python" />{" "}
+        /*
+        <a href="cpp">
+                <img
+                  src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"
+                  alt="cpp"
+                />
+              </a>
+        */
       />
       <div className="sections-container">
         <div id="about" className="section">

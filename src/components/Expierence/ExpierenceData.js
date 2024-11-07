@@ -1,5 +1,5 @@
 const MightyOakMedicalExpierence = [
-  "Designed, developed, and maintained a dynamic full-stack web and mobile application utilizing Flutter, Elixir, React.js, Docker, AWS (S3), and PostgreSQL, serving bothinternal and over 150 external users via the mobile application. Ensure optimal performance and scalability through ongoing support and maintenance of the application stack.",
+  "Designed, developed, and maintained a dynamic full-stack web and mobile application utilizing Flutter, Elixir, React.js, Docker, AWS (S3), and PostgreSQL, serving both internal and over 150 external users via the mobile application. Ensure optimal performance and scalability through ongoing support and maintenance of the application stack.",
   "Converting pre-existing in house macros (Visual Basic) in SolidWorks 2016 to new maintainable high quality codebases such as Python.",
   "Collaborate with other developers and engineers to identify opportunities for macro conversion and develop a process for maintaining and improving code quality.",
   "Stay up-to-date with new developments in SolidWorks and Python to ensure that the converted macros continue to work efficiently and effectively.",
