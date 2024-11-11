@@ -7,66 +7,56 @@
     www.ethan-herndon.com
   </p>
 
-  <p>
-   <a href = "">
-    <img src="https://img.shields.io/github/languages/top/HerndonE/Portfolio-Website" alt="Languages" />
-  </a>
-   <a href = "">
-    <img src="https://img.shields.io/github/repo-size/HerndonE/Portfolio-Website" alt="Code Size" />
-  </a>
-   <a href = "">
-    <img src="https://img.shields.io/github/last-commit/HerndonE/Portfolio-Website" alt="Last Commit" />
-  </a>
-   <a href = "">
-    <img src="https://img.shields.io/github/actions/workflow/status/HerndonE/Portfolio-Website/ci.yaml" alt="GitHub Actions Workflow Status" />
-  </a>
+  <p align="center">
+   <a href = ""><img src="https://img.shields.io/github/languages/top/HerndonE/Portfolio-Website" alt="Languages" /></a>
+   <a href = ""><img src="https://img.shields.io/github/repo-size/HerndonE/Portfolio-Website" alt="Code Size" /></a>
+   <a href = ""><img src="https://img.shields.io/github/last-commit/HerndonE/Portfolio-Website" alt="Last Commit" /></a>
+   <a href = ""><img src="https://img.shields.io/github/actions/workflow/status/HerndonE/Portfolio-Website/ci.yaml" alt="GitHub Actions Workflow Status" /></a>
   </p>
 
 </div>
 
 #  About the Project
-### 👾 Tech Stack
-<ul>
+### Tech Stack 👾 
+<details>
+  <summary>Client</summary>
+  <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
     <li><a href="https://www.javascript.com">JavaScript</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
   </ul>
+</details>
+<details>
+  <summary>Hosting</summary>
+  <ul>
+    <li><a href="https://pages.github.com/">GitHub Pages</a></li>
+  </ul>
+</details>
+<details>
+  <summary>Deployment</summary>
+  <ul>
+    <li><a href="https://github.com/features/actions">GitHub Actions</a></li>
+  </ul>
+</details>
 
-<!-- Features
-### 🎯 Features
+### Features 🎯
 
-- Feature 1
-- Feature 2
-- Feature 3
--->
+- Smooth Scroll Navigation
+- Dynamic Experience and Project Displays
+- Routing with React Router
+- Custom Table for Project Details
 
-# Getting Started
+### Color Reference 🎨
 
-In the project directory, you can run:
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Primary Color | ![#08120e](https://via.placeholder.com/10/08120e?text=+) #08120e  |
+| Headers | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
+| Text Color | ![#a3a2a2](https://via.placeholder.com/10/a3a2a2?text=+) #a3a2a2 |
+| Tag Primary Color | ![#132f4a](https://via.placeholder.com/10/132f4a?text=+) #132f4a |
+| Tag Text Color | ![#58dad4](https://via.placeholder.com/10/58dad4?text=+) #58dad4 |
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds  the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 <!---
 Website References/Inspirations:

@@ -14,6 +14,10 @@ const MightyOakMedicalTags = [
   "Automation",
   "Quality",
   "Regulatory",
+  "SOP",
+  "ISO",
+  "IEC",
+  "IEEE",
 ];
 const AtlassianTags = [
   "Jira",

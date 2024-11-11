@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./styles.scss";
 import CustomNav from "./components/CustomNav.js";
+import CustomNavXp from "./components/CustomNavExp.js";
 import { ExperienceTagContainer } from "./components/Expierence/ExpierenceTagData.js";
 import ExperienceTags from "./components/Expierence/ExpierenceTags.js";
 import { ExpierenceContainer } from "./components/Expierence/ExpierenceData.js";
@@ -213,12 +214,25 @@ const Home = () => (
 const ExpierencePage = () => (
   <>
     <div className="app-container">
+      <CustomNavXp
+        li={[
+          ["Experience", "#/experience"],
+          ["Education", "#/education"],
+          ["Achievements", "#/achievements"],
+        ]}
+        handleClick={handleClick}
+      />
       <div className="sections-container">
         <div id="experience" className="section">
           <p className="custom-paragraph">
             <div class="experience-entry">
               <div class="experience-start-year">Jan 2022 - PRESENT</div>
               <div class="experience-description">
+                <a href="/" rel="noreferrer" className="link">
+                  <div className="job-title">
+                    <span>&#8592;</span> Home
+                  </div>
+                </a>
                 <a
                   href="https://mightyoakmedical.com/"
                   target="_blank"
@@ -345,6 +359,68 @@ const ExpierencePage = () => (
             </div>
           </p>
         </div>
+        <div id="education" className="section">
+          <p className="custom-paragraph">
+            <div class="experience-entry">
+              <div class="experience-start-year">Aug 2019 - June 2021</div>
+              <div class="experience-description">
+                <a
+                  href="https://csumb.edu/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                >
+                  <div className="job-title">
+                    B.S. Computer Science - California State Monetery Bay{" "}
+                    <span>&#8599;</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </p>
+          <p className="custom-paragraph">
+            <div class="experience-entry">
+              <div class="experience-start-year">Jun 2015 - Jun 2019</div>
+              <div class="experience-description">
+                <a
+                  href="https://www.santarosa.edu/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                >
+                  <div className="job-title">
+                    A.S. Computer Science - Santa Rosa Junior College{" "}
+                    <span>&#8599;</span>
+                    <p></p>
+                    A.S. Natural Science<p></p>
+                    A.A. Communications<p></p>
+                    Cisco Networking Certificate<p></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </p>
+        </div>
+
+        <div id="achievements" className="section">
+          <p className="custom-paragraph">
+            <div class="experience-entry">
+              <div class="experience-start-year">Dec 2010</div>
+              <div class="experience-description">
+                <a
+                  href="https://www.scouting.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                >
+                  <div className="job-title">
+                    Eagle Scout - Boy Scouts of America <span>&#8599;</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </p>
+        </div>
       </div>
     </div>
   </>
@@ -355,7 +431,7 @@ const ProjectsPage = () => {
   const tableStyle = {
     width: "100%", // Set the width of the table
     maxWidth: "1400px", // Set a maximum width for the table
-    margin: "50px auto", // Center the table with automatic margins
+    margin: "20px auto", // Center the table with automatic margins
     borderCollapse: "collapse",
   };
 
@@ -375,6 +451,11 @@ const ProjectsPage = () => {
     <>
       <div className="app-container">
         <div className="sections-container">
+          <a href="/" rel="noreferrer" className="link">
+            <div className="job-title" style={{ paddingTop: "20px" }}>
+              <span>&#8592;</span> Home
+            </div>
+          </a>
           <div class="table-entry">
             <table style={tableStyle}>
               <thead>
