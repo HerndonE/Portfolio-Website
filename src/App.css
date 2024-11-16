@@ -1,3 +1,5 @@
+@import url("values.css");
+
 .App {
   text-align: center;
 }
@@ -21,7 +23,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--header-color);
 }
 
 .App-link {
@@ -39,7 +41,7 @@
 
 .app-container {
   display: flex;
-  background-color:  #08120e;
+  background-color:  var(--primary-color);
 }
 
 /******************************/
@@ -48,8 +50,8 @@
   margin-left: 250px;
   display: flex;
   flex-direction: column;
-  background-color:  #08120e;
-  color: #a3a2a2;
+  background-color:  var(--primary-color);
+  color: var(--text-color);
   padding-bottom: 100px;
 }
 
@@ -71,9 +73,8 @@
   padding-left: 245px;
 }
 
-
 li::marker {
-	color: #58dad4;
+	color: var(--tag-text-color);
   }
 
 .ul-modified {
@@ -86,7 +87,7 @@ li::marker {
   }
   
   .ul-modified::marker {
-	color: #58dad4;
+	color: var(--tag-text-color);
   }
 
   /********************************/
@@ -106,8 +107,6 @@ li::marker {
 .table-entry > div:first-child {
   width: 100px; /* Fixed width for the first item */
 }
-  
-
 
 .experience-entry {
   display: grid;
@@ -142,23 +141,23 @@ li::marker {
 }
 
 .link-style {
-  color: white;
+  color: var(--header-color);
   font-weight: bold;
   font-size: 1.2em;
 }
 
 .project-link {
-  color: white;
+  color: var(--header-color);
   font-size: 1.2em;
 }
 
 .link:hover .project-link {
-  color: lightblue;
+  color: var(--primary-link-color);
 }
 
 
 .job-title {
-  color: white;
+  color: var(--header-color);
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -169,7 +168,7 @@ li::marker {
 }
 
 .link:hover .job-title {
-  color: lightblue;
+  color: var(--primary-link-color);
 }
 
 .company-name {
@@ -177,18 +176,15 @@ li::marker {
   color: #444;
 }
 
-
 .company-names {
   display: flex;
   flex-direction: column;
 }
 
-
 .tech-stack {
   font-size: 0.8em;
   margin-top: 5px;
 }
-
 
 .break-line {
   width: 100%;
@@ -204,13 +200,13 @@ li::marker {
 }
 
 .tag {
-  background-color: #132f4a;
-  color: #58dad4;
+  background-color: var(--tag-primary-color);
+  color: var(--tag-text-color);
   font-weight: bold;
-  padding: 8px 12px; /* Adjust padding to increase size */
-  margin-right: 8px; /* Increase margin if needed */
-  font-size: 14px; /* Increase font size */
-  border-radius: 8px; /* Adjust to control the roundness */
+  padding: 8px 12px;
+  margin-right: 8px;
+  font-size: 14px;
+  border-radius: 8px; 
   white-space: nowrap;
 }
 
@@ -219,7 +215,8 @@ li::marker {
   justify-content: center;
 }
 
-/* Hover box styles 
+/* Test Later 
+Hover box styles 
 .experience-entry:hover::after {*/
 .test:hover::after {
   content: ""; /* Required for the pseudo-element */
@@ -237,7 +234,7 @@ li::marker {
   padding-left: 250px;
   display: flex;
   font-weight: bold;
-  color: #58dad4;
+  color: var(--tag-text-color);
 }
 
 .link:hover .link-other {
@@ -246,13 +243,13 @@ li::marker {
 
 
 .show-more-button {
-  background-color: #132f4a;
-  color: #58dad4;
+  background-color: var(--tag-primary-color);
+  color: var(--tag-text-color);
   font-weight: bold;
-  padding: 8px 12px; /* Adjust padding to increase size */
-  margin-right: 8px; /* Increase margin if needed */
-  font-size: 14px; /* Increase font size */
-  border-radius: 8px; /* Adjust to control the roundness */
+  padding: 8px 12px; 
+  margin-right: 8px; 
+  font-size: 14px; 
+  border-radius: 8px; 
   white-space: nowrap;
 }
 
