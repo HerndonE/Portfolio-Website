@@ -1,3 +1,11 @@
+const PortfolioWeb = [
+  "JavaScript",
+  "CSS",
+  "SCSS",
+  "HTML",
+  "React",
+  "Github Pages",
+];
 const MineCraftBot = ["Python", "PyQt5", "win32com", "rcon", "Discord API"];
 const D2PServerUpdate = ["HTML", "paintball2", "documentation"];
 const MacroPad = ["Python", "circuitpython", "macropad", "media", "capture"];
@@ -13,6 +21,7 @@ const PingTool = ["Python", "Tkinter", "Command Prompt"];
 const HoverTankGame = ["C#", "Unity", "3D"];
 
 const ProjectTagContainer = [
+  PortfolioWeb,
   MineCraftBot,
   D2PServerUpdate,
   MacroPad,

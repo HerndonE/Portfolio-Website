@@ -1,3 +1,12 @@
+const PortfolioWebsite = [
+  [
+    "2024",
+    "Ethan Herndons Portfolio Website",
+    "Portfolio website built with React, JavaScript, HTML, and CSS, and deployed on GitHub Pages.",
+    "https://github.com/HerndonE/Portfolio-Website",
+  ],
+];
+
 const MineCraftBot = [
   [
     "2023",
@@ -114,6 +123,7 @@ const HoverTankGame = [
 ];
 
 const ProjectsContainer = [
+  PortfolioWebsite,
   MineCraftBot,
   DP2ServerPage,
   MacroPad,
