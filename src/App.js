@@ -136,16 +136,16 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsContainer[0][0][3]}
+                  href={ProjectsContainer[1][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    {ProjectsContainer[0][0][1]} <span>&#8599;</span>{" "}
+                    {ProjectsContainer[1][0][1]} <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                {ProjectsContainer[0][0][2]}
+                {ProjectsContainer[1][0][2]}
                 <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={0} />
               </div>
             </div>
@@ -155,30 +155,6 @@ const Home = () => (
                   src={`${process.env.PUBLIC_URL}/img/weather-app.png`}
                   alt="Project Icon"
                   width={100}
-                  height={100}
-                />
-              </div>
-              <div class="experience-description">
-                <a
-                  href={ProjectsContainer[6][0][3]}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link"
-                >
-                  <div class="job-title">
-                    {ProjectsContainer[6][0][1]} <span>&#8599;</span>{" "}
-                  </div>
-                </a>
-                {ProjectsContainer[6][0][2]}
-                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={6} />
-              </div>
-            </div>
-            <div class="experience-entry">
-              <div class="project-image">
-                <img
-                  src={`https://raw.githubusercontent.com/HerndonE/Battlezone-Missions/master/BZCC%20Lost%20Missions%20Campaign/Images/LMBZCCLogo.png`}
-                  alt="Project Icon"
-                  width={200}
                   height={100}
                 />
               </div>
@@ -195,6 +171,30 @@ const Home = () => (
                 </a>
                 {ProjectsContainer[7][0][2]}
                 <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={7} />
+              </div>
+            </div>
+            <div class="experience-entry">
+              <div class="project-image">
+                <img
+                  src={`https://raw.githubusercontent.com/HerndonE/Battlezone-Missions/master/BZCC%20Lost%20Missions%20Campaign/Images/LMBZCCLogo.png`}
+                  alt="Project Icon"
+                  width={200}
+                  height={100}
+                />
+              </div>
+              <div class="experience-description">
+                <a
+                  href={ProjectsContainer[8][0][3]}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link"
+                >
+                  <div class="job-title">
+                    {ProjectsContainer[8][0][1]} <span>&#8599;</span>{" "}
+                  </div>
+                </a>
+                {ProjectsContainer[8][0][2]}
+                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={8} />
               </div>
             </div>
             <a href="#/projects" className="link">
