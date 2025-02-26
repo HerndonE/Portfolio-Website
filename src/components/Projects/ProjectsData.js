@@ -1,3 +1,12 @@
+const BZCCStatistics = [
+  [
+    "2025",
+    "Battlezone Combat Commander Strategy Statistics",
+    "A JSON API displaying Battlezone Combat Commander strategy games.",
+    "https://herndone.github.io/battlezone-combat-commander-strategy-statistics/",
+  ],
+];
+
 const PortfolioWebsite = [
   [
     "2024",
@@ -123,6 +132,7 @@ const HoverTankGame = [
 ];
 
 const ProjectsContainer = [
+  BZCCStatistics,
   PortfolioWebsite,
   MineCraftBot,
   DP2ServerPage,

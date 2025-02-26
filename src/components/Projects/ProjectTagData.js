@@ -1,3 +1,5 @@
+const BZCCStats = ["Python", "API", "JSON", "Statistics", "Battlezone"];
+
 const PortfolioWeb = [
   "JavaScript",
   "CSS",
@@ -21,6 +23,7 @@ const PingTool = ["Python", "Tkinter", "Command Prompt"];
 const HoverTankGame = ["C#", "Unity", "3D"];
 
 const ProjectTagContainer = [
+  BZCCStats,
   PortfolioWeb,
   MineCraftBot,
   D2PServerUpdate,

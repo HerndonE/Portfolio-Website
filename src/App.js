@@ -13,6 +13,10 @@ import ProjectTags from "./components/Projects/ProjectTags.js";
 import { ProjectsContainer } from "./components/Projects/ProjectsData.js";
 import ScrollToTop from "./components/ScrollToTop.js";
 
+const ProjectOneIndex = 2;
+const ProjectTwoIndex = 8;
+const ProjectThreeIndex = 9;
+
 const handleClick = (id) => {
   const element = document.getElementById(id);
   if (element) {
@@ -136,17 +140,21 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsContainer[1][0][3]}
+                  href={ProjectsContainer[ProjectOneIndex][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    {ProjectsContainer[1][0][1]} <span>&#8599;</span>{" "}
+                    {ProjectsContainer[ProjectOneIndex][0][1]}{" "}
+                    <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                {ProjectsContainer[1][0][2]}
-                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={0} />
+                {ProjectsContainer[ProjectOneIndex][0][2]}
+                <ProjectTags
+                  AllTags={ProjectTagContainer}
+                  IndexOfAllTags={ProjectOneIndex}
+                />
               </div>
             </div>
             <div class="experience-entry">
@@ -160,17 +168,21 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsContainer[7][0][3]}
+                  href={ProjectsContainer[ProjectTwoIndex][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    {ProjectsContainer[7][0][1]} <span>&#8599;</span>{" "}
+                    {ProjectsContainer[ProjectTwoIndex][0][1]}{" "}
+                    <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                {ProjectsContainer[7][0][2]}
-                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={7} />
+                {ProjectsContainer[ProjectTwoIndex][0][2]}
+                <ProjectTags
+                  AllTags={ProjectTagContainer}
+                  IndexOfAllTags={ProjectTwoIndex}
+                />
               </div>
             </div>
             <div class="experience-entry">
@@ -184,17 +196,21 @@ const Home = () => (
               </div>
               <div class="experience-description">
                 <a
-                  href={ProjectsContainer[8][0][3]}
+                  href={ProjectsContainer[ProjectThreeIndex][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
                   <div class="job-title">
-                    {ProjectsContainer[8][0][1]} <span>&#8599;</span>{" "}
+                    {ProjectsContainer[ProjectThreeIndex][0][1]}{" "}
+                    <span>&#8599;</span>{" "}
                   </div>
                 </a>
-                {ProjectsContainer[8][0][2]}
-                <ProjectTags AllTags={ProjectTagContainer} IndexOfAllTags={8} />
+                {ProjectsContainer[ProjectThreeIndex][0][2]}
+                <ProjectTags
+                  AllTags={ProjectTagContainer}
+                  IndexOfAllTags={ProjectThreeIndex}
+                />
               </div>
             </div>
             <a href="#/projects" className="link">
