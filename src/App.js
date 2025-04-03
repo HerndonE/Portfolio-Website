@@ -80,9 +80,14 @@ const Home = () => (
                   className="link"
                 >
                   <div className="job-title">
-                    Software Engineer - Mighty Oak Medical <span>&#8599;</span>
+                    Senior Software Engineer - Mighty Oak Medical{" "}
+                    <span>&#8599;</span>
                   </div>
                 </a>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <h3 style={{ marginRight: "8px" }}>Software Engineer</h3>
+                  <span>Jan 2022 - Jan 2025</span>
+                </div>
                 <Expierence
                   AllExpierences={ExpierenceContainer}
                   IndexOfAllExpierences={0}
@@ -256,9 +261,14 @@ const ExpierencePage = () => (
                   className="link"
                 >
                   <div className="job-title">
-                    Software Engineer - Mighty Oak Medical <span>&#8599;</span>
+                    Senior Software Engineer - Mighty Oak Medical{" "}
+                    <span>&#8599;</span>
                   </div>
                 </a>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <h3 style={{ marginRight: "8px" }}>Software Engineer</h3>
+                  <span>Jan 2022 - Jan 2025</span>
+                </div>
                 <Expierence
                   AllExpierences={ExpierenceContainer}
                   IndexOfAllExpierences={0}
