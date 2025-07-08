@@ -247,7 +247,7 @@ const ExpierencePage = () => (
         <div id="experience" className="section">
           <p className="custom-paragraph">
             <div class="experience-entry">
-              <div class="experience-start-year">Jan 2022 - PRESENT</div>
+              <div class="experience-start-year">Jan 2022 - Jul 2025</div>
               <div class="experience-description">
                 <a href="/" rel="noreferrer" className="link">
                   <div className="job-title">
