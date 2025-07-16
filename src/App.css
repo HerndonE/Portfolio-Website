@@ -39,74 +39,114 @@
   }
 }
 
+:root {
+  --experience-offset: 240px;
+}
+
+/* ===============================
+Layout Containers
+=================================*/
+
 .app-container {
   display: flex;
-  background-color:  var(--primary-color);
+  background-color: var(--primary-color);
 }
-
-/******************************/
 
 .sections-container {
-  margin-left: 250px;
+  margin-left: 350px;
   display: flex;
   flex-direction: column;
-  background-color:  var(--primary-color);
+  background-color: var(--primary-color);
   color: var(--text-color);
   padding-bottom: 100px;
+  align-items: flex-start;
 }
 
-.section {
-  padding: 100px;
-  padding-right: 50px;
-  /*background-color: lightblue;  Just for demonstration */
+/* ===============================
+Shared Section Styles
+=================================*/
+
+.section,
+.custom-about {
+  flex: 1;
+  width: 800px;
+  flex-direction: column;
   padding-top: 30px;
   padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 0;
 }
 
-.custom-paragraph {
-  width: 1000px; /* Set a specific width for the paragraph */
+/* Additional padding for .section, if needed */
+.section {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-right: 50px;
 }
 
-.custom-about {
-  flex-direction: column; /* Arrange children vertically */
-  width: 800px; /* Set a specific width for the flex container */
-  padding-left: 245px;
+/* For aligned indentation across content blocks */
+.aligned-content {
+  padding-left: var(--experience-offset);
 }
 
-li::marker {
-	color: var(--tag-text-color);
-  }
+/* ===============================
+Typography & Headings
+=================================*/
+
+.custom-paragraph,
+.job-title {
+  margin: 0;
+  padding: 0;
+}
+
+.job-title {
+  color: var(--header-color);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.link-style,
+.project-link {
+  color: var(--header-color);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover .project-link,
+.link:hover .job-title {
+  color: var(--primary-link-color);
+}
+
+/* ===============================
+About Section
+=================================*/
+
+.about-inner {
+  padding-left: var(--experience-offset);
+}
 
 .ul-modified {
-	display: grid;
-	grid-template-columns: auto auto;
-	justify-content: left;
-	margin-left: 20px;
-	padding-right: 20px;
-	column-gap:50px; /* Adjust this value as needed */
-  }
-  
-  .ul-modified::marker {
-	color: var(--tag-text-color);
-  }
-
-  /********************************/
-
-.table-entry {
-  display: flex; /* Use flexbox for layout */
-  gap: 10px; /* Space between items */
-  align-items: center; /* Center items vertically */
-  margin-bottom: 50px; /* Space below each entry */
-  position: relative; /* Required for positioning the hover box */
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: left;
+  column-gap: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.table-entry > div {
-  flex: 1; /* Allow each child to grow equally */
+li::marker,
+.ul-modified::marker {
+  color: var(--tag-text-color);
 }
 
-.table-entry > div:first-child {
-  width: 100px; /* Fixed width for the first item */
-}
+/* ===============================
+Experience Section
+=================================*/
 
 .experience-entry {
   display: grid;
@@ -115,7 +155,7 @@ li::marker {
   align-items: center;
   justify-content: start;
   margin-bottom: 20px;
-  position: relative; /* Required for positioning the hover box */
+  position: relative;
 }
 
 .experience-start-year {
@@ -133,65 +173,36 @@ li::marker {
   flex-direction: column;
   row-gap: 5px;
   line-height: 1.5;
-  padding-left: 50px;
+  padding-left: 50px; /* Still used internally */
 }
 
 .experience-description .link {
   text-decoration: none;
 }
 
-.link-style {
-  color: var(--header-color);
-  font-weight: bold;
-  font-size: 1.2em;
-}
+/* ===============================
+Reusable Info Table Layout
+=================================*/
 
-.project-link {
-  color: var(--header-color);
-  font-size: 1.2em;
-}
-
-.link:hover .project-link {
-  color: var(--primary-link-color);
-}
-
-
-.job-title {
-  color: var(--header-color);
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.link:hover .job-title {
-  color: var(--primary-link-color);
-}
-
-.company-name {
-  font-weight: bold;
-  color: #444;
-}
-
-.company-names {
+.table-entry {
   display: flex;
-  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
 }
 
-.tech-stack {
-  font-size: 0.8em;
-  margin-top: 5px;
+.table-entry > div {
+  flex: 1;
 }
 
-.break-line {
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-  margin: 10px 0;
-
+.table-entry > div:first-child {
+  width: 100px;
 }
+
+/* ===============================
+Tags and Tech Stack
+=================================*/
 
 .tags {
   display: flex;
@@ -206,14 +217,44 @@ li::marker {
   padding: 8px 12px;
   margin-right: 8px;
   font-size: 14px;
-  border-radius: 8px; 
+  border-radius: 8px;
   white-space: nowrap;
 }
+
+.tech-stack {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+/* ===============================
+Media and Project Display
+=================================*/
 
 .project-image {
   display: flex;
   justify-content: center;
 }
+
+.break-line {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+/* ===============================
+Company Info
+=================================*/
+
+.company-name {
+  font-weight: bold;
+  color: #444;
+}
+
+.company-names {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* Test Later 
 Hover box styles 
@@ -255,4 +296,38 @@ Hover box styles
 
 .show-more-button:hover {
   background-color: #0056b3;
+}
+
+/* ===============================
+Mobile Responsive Adjustments
+=================================*/
+@media only screen and (max-width: 768px) {
+
+  html, body {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* or center for horizontal centering */
+    width: 100%;
+    box-sizing: border-box;
+    
+  }
+
+  .sections-container {
+    margin-left: 0px;
+    padding-left: 275px; 
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding-bottom: 100px;
+    align-items: flex-start;
+  }
+
 }
