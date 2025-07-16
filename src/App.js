@@ -45,28 +45,29 @@ const Home = () => (
         */
       />
       <div className="sections-container">
-        <div id="about" className="section">
-          <p className="custom-about">
-            Back in 2001, I laid my eyes on the video game that would ignite my
-            Computer Science career. From that moment, I knew I wanted to share
-            that inspiration with the world. Fast forward to present times, I've
-            had the privilege of serving government entities, the medical
-            industry, and global software corporations by developing software as
-            well as provide quality information technology support. Outside of
-            the world of computers, I enjoy camping, hiking, and water-skiing.
-            <br />
-            <br />
-            Here are the current technologies I have been working with:
-            <br />
-            <div class="ul-modified">
+        <div className="custom-about">
+          <div className="aligned-content">
+            <p>
+              Back in 2001, I laid my eyes on the video game that would ignite
+              my Computer Science career. From that moment, I knew I wanted to
+              share that inspiration with the world. Fast forward to present
+              times, I've had the privilege of serving government entities, the
+              medical industry, and global software corporations by developing
+              software as well as providing quality IT support. Outside of the
+              world of computers, I enjoy camping, hiking, and water-skiing.
+            </p>
+
+            <p>Here are the current technologies I have been working with:</p>
+
+            <ul className="ul-modified">
               <li>Python</li>
               <li>AWS (EC2)</li>
               <li>Flutter</li>
               <li>Discord.py</li>
               <li>SQL</li>
               <li>React</li>
-            </div>
-          </p>
+            </ul>
+          </div>
         </div>
         <div id="experience" className="section">
           <p className="custom-paragraph">

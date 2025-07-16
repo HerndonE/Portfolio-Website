@@ -4,7 +4,6 @@ $backgroundColor: white;
 $textcolor: #000000;
 $borderLeftColor: rgb(230, 230, 230);
 
-
 .navbar-menu {
   position: fixed; // Keep navbar fixed
   top: 0; // Stick to the top of the viewport
@@ -95,3 +94,99 @@ $borderLeftColor: rgb(230, 230, 230);
   }
 }
 
+/* For Mobile viewing */
+@media only screen and (max-width: 768px) {
+.navbar-menu {
+  position: fixed; // Keep navbar fixed
+  top: 0; // Stick to the top of the viewport
+  left: 0;
+  width: 200px !important;
+  height: 100vh;
+  overflow-y: auto; // Allow vertical scrolling within navbar
+  background-color:  #08120e;
+  color: rgb(163, 162, 162);
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+  
+  .nav-footer-icons {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    left: 3%;
+    transform: translateX(-50%);
+    z-index: 999; /* Ensure icons are above other content */
+
+  }
+  
+  .nav-footer-icons a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .nav-footer-icons i {
+    font-size: 24px; /* Adjust the size of the icons as needed */
+    margin: 0 10px; /* Adjust the spacing between icons as needed */
+    color: rgb(163, 162, 162); /* Set initial color of icons */
+    transition: color 0.3s; /* Add transition effect for color change */
+  }
+  
+  .nav-footer-icons i:hover {
+    color: rgb(230, 230, 230); /* Change color on hover */
+  }
+
+  .burger {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    cursor: pointer;
+    
+    img {
+      padding: 25px 8px 0px 0px;
+      cursor: pointer;
+    }
+  }
+  
+  .navbar__list {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: left;
+    
+    .name {
+      color: white;
+      font-size: 14px;
+    }
+    
+    .role {
+      color: rgb(230, 230, 230);
+      font-size: 14px;
+    }
+
+    .navbar__li {
+      display: block;
+      padding: 0px 0px 0px 12px;
+      position: relative;
+      top: 2.5px;
+      font-size: 16px;
+      letter-spacing: 0px;
+      line-height: 38px;
+      color: rgb(163, 162, 162);
+      font-family: "Lato";
+      font-weight: 400;
+      
+      &-box:first-child {
+        margin-top: 53px;
+      }
+      
+      &-box {
+        height: 43px;
+        margin-top: 15px;
+        
+        &:hover {
+          border-left: 7px solid $borderLeftColor;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+}
