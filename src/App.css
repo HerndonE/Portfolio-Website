@@ -301,7 +301,52 @@ Hover box styles
 /* ===============================
 Mobile Responsive Adjustments
 =================================*/
+
+.show-on-mobile, .divider, .year-span {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+
+  .experience-start-year{
+    display: none !important;;
+  }
+
+  .hide-project-image {
+    display: none;
+  }
+
+  .year-span {
+    display: block;
+    padding-top: 1%;
+  }
+
+  .show-on-mobile {
+    display: block;
+    padding-bottom: 5%;
+  }
+
+  .divider {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .divider h3 {
+    color: var(--tag-text-color);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .name {
+    color: white;
+    font-size: 15px;
+  }
+  
+  .role {
+    color: rgb(230, 230, 230);
+  }
 
   html, body {
     min-height: 100vh;
@@ -313,21 +358,70 @@ Mobile Responsive Adjustments
   .app-container {
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* or center for horizontal centering */
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
     width: 100%;
-    box-sizing: border-box;
-    
   }
 
   .sections-container {
-    margin-left: 0px;
-    padding-left: 275px; 
-    display: flex;
-    flex-direction: column;
+    margin-left: 0 !important;
+    padding: 0 !important;
     background-color: var(--primary-color);
     color: var(--text-color);
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+  }
+
+  .project-link-mobile {
+    color: var(--header-color);
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .custom-about {
+    width: 100% !important;
+    padding: 0 16px !important;
+  }
+
+  .link-other{
+    padding-left: 20px;
+  }
+
+  .aligned-content,
+  .about-inner {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .experience-entry {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .experience-description,
+  .project-entry,
+  .project-description {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+
+  .experience-description > *,
+  .project-description > *{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .ul-modified {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
 }

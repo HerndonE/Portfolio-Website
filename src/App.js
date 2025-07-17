@@ -28,14 +28,15 @@ const handleClick = (id) => {
 const Home = () => (
   <>
     <div className="app-container">
-      <CustomNav
-        li={[
-          ["About", "#/about"],
-          ["Experience", "#/experience"],
-          ["Projects", "#/projects"],
-        ]}
-        handleClick={handleClick} // Pass handleClick function to CustomNav
-        /*
+      <div class="hide-on-mobile">
+        <CustomNav
+          li={[
+            ["About", "#/about"],
+            ["Experience", "#/experience"],
+            ["Projects", "#/projects"],
+          ]}
+          handleClick={handleClick} // Pass handleClick function to CustomNav
+          /*
         <a href="cpp">
                 <img
                   src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"
@@ -43,10 +44,28 @@ const Home = () => (
                 />
               </a>
         */
-      />
+        />
+      </div>
       <div className="sections-container">
         <div className="custom-about">
           <div className="aligned-content">
+            <div class="show-on-mobile">
+              <div class="name">
+                <h1>Ethan Herndon</h1>
+              </div>
+              <br />
+              <div class="role">
+                <h3>Senior Software Engineer</h3>
+              </div>
+              <br />
+              <p>
+                Developing new quality codebases, programs, and full-stack
+                applications from the ground up.
+              </p>
+            </div>
+            <div class="divider">
+              <h3>About</h3>
+            </div>
             <p>
               Back in 2001, I laid my eyes on the video game that would ignite
               my Computer Science career. From that moment, I knew I wanted to
@@ -74,6 +93,12 @@ const Home = () => (
             <div class="experience-entry">
               <div class="experience-start-year">Jan 2022 - Jul 2025</div>
               <div class="experience-description">
+                <div class="divider">
+                  <h3>Experience</h3>
+                </div>
+                <div class="year-span">
+                  <span>Jan 2022 - Jul 2025</span>
+                </div>
                 <a
                   href="https://mightyoakmedical.com/"
                   target="_blank"
@@ -99,9 +124,13 @@ const Home = () => (
                 />
               </div>
             </div>
+
             <div class="experience-entry">
               <div class="experience-start-year"> July 2021 - Dec 2021</div>
               <div class="experience-description">
+                <div class="year-span">
+                  <span>July 2021 - Dec 2021</span>
+                </div>
                 <div class="company-names">
                   <a
                     href="https://www.atlassian.com/"
@@ -136,15 +165,20 @@ const Home = () => (
         <div id="projects" className="section">
           <p className="custom-paragraph">
             <div class="experience-entry">
-              <div class="project-image">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/mcd-icon.png`}
-                  alt="Project Icon"
-                  width={100}
-                  height={100}
-                />
+              <div class="hide-project-image">
+                <div class="project-image">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/img/mcd-icon.png`}
+                    alt="Project Icon"
+                    width={100}
+                    height={100}
+                  />
+                </div>
               </div>
               <div class="experience-description">
+                <div class="divider">
+                  <h3>Projects</h3>
+                </div>
                 <a
                   href={ProjectsContainer[ProjectOneIndex][0][3]}
                   target="_blank"
@@ -155,8 +189,8 @@ const Home = () => (
                     {ProjectsContainer[ProjectOneIndex][0][1]}{" "}
                     <span>&#8599;</span>{" "}
                   </div>
+                  {ProjectsContainer[ProjectOneIndex][0][2]}
                 </a>
-                {ProjectsContainer[ProjectOneIndex][0][2]}
                 <ProjectTags
                   AllTags={ProjectTagContainer}
                   IndexOfAllTags={ProjectOneIndex}
@@ -164,13 +198,15 @@ const Home = () => (
               </div>
             </div>
             <div class="experience-entry">
-              <div class="project-image">
-                <img
-                  src={`${process.env.PUBLIC_URL}/img/weather-app.png`}
-                  alt="Project Icon"
-                  width={100}
-                  height={100}
-                />
+              <div class="hide-project-image">
+                <div class="project-image">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/img/weather-app.png`}
+                    alt="Project Icon"
+                    width={100}
+                    height={100}
+                  />
+                </div>
               </div>
               <div class="experience-description">
                 <a
@@ -183,8 +219,9 @@ const Home = () => (
                     {ProjectsContainer[ProjectTwoIndex][0][1]}{" "}
                     <span>&#8599;</span>{" "}
                   </div>
+                  {ProjectsContainer[ProjectTwoIndex][0][2]}
                 </a>
-                {ProjectsContainer[ProjectTwoIndex][0][2]}
+
                 <ProjectTags
                   AllTags={ProjectTagContainer}
                   IndexOfAllTags={ProjectTwoIndex}
@@ -192,13 +229,15 @@ const Home = () => (
               </div>
             </div>
             <div class="experience-entry">
-              <div class="project-image">
-                <img
-                  src={`https://raw.githubusercontent.com/HerndonE/Battlezone-Missions/master/BZCC%20Lost%20Missions%20Campaign/Images/LMBZCCLogo.png`}
-                  alt="Project Icon"
-                  width={200}
-                  height={100}
-                />
+              <div class="hide-project-image">
+                <div class="project-image">
+                  <img
+                    src={`https://raw.githubusercontent.com/HerndonE/Battlezone-Missions/master/BZCC%20Lost%20Missions%20Campaign/Images/LMBZCCLogo.png`}
+                    alt="Project Icon"
+                    width={200}
+                    height={100}
+                  />
+                </div>
               </div>
               <div class="experience-description">
                 <a
@@ -211,8 +250,9 @@ const Home = () => (
                     {ProjectsContainer[ProjectThreeIndex][0][1]}{" "}
                     <span>&#8599;</span>{" "}
                   </div>
+                  {ProjectsContainer[ProjectThreeIndex][0][2]}
                 </a>
-                {ProjectsContainer[ProjectThreeIndex][0][2]}
+
                 <ProjectTags
                   AllTags={ProjectTagContainer}
                   IndexOfAllTags={ProjectThreeIndex}
@@ -236,14 +276,16 @@ const Home = () => (
 const ExpierencePage = () => (
   <>
     <div className="app-container">
-      <CustomNavXp
-        li={[
-          ["Experience", "#/experience"],
-          ["Education", "#/education"],
-          ["Achievements", "#/achievements"],
-        ]}
-        handleClick={handleClick}
-      />
+      <div class="hide-on-mobile">
+        <CustomNavXp
+          li={[
+            ["Experience", "#/experience"],
+            ["Education", "#/education"],
+            ["Achievements", "#/achievements"],
+          ]}
+          handleClick={handleClick}
+        />
+      </div>
       <div className="sections-container">
         <div id="experience" className="section">
           <p className="custom-paragraph">
@@ -255,6 +297,12 @@ const ExpierencePage = () => (
                     <span>&#8592;</span> Home
                   </div>
                 </a>
+                <div class="divider">
+                  <h3>Experience</h3>
+                </div>
+                <div class="year-span">
+                  <span>Jan 2022 - Jul 2025</span>
+                </div>
                 <a
                   href="https://mightyoakmedical.com/"
                   target="_blank"
@@ -283,6 +331,9 @@ const ExpierencePage = () => (
             <div class="experience-entry">
               <div class="experience-start-year"> July 2021 - Dec 2021</div>
               <div class="experience-description">
+                <div class="year-span">
+                  <span>July 2021 - Dec 2021</span>
+                </div>
                 <div class="company-names">
                   <a
                     href="https://www.atlassian.com/"
@@ -309,6 +360,9 @@ const ExpierencePage = () => (
             <div class="experience-entry">
               <div class="experience-start-year"> July 2020 - May 2021</div>
               <div class="experience-description">
+                <div class="year-span">
+                  <span>July 2020 - May 2021</span>
+                </div>
                 <div class="company-names">
                   <a
                     href="https://www.rpcity.org/"
@@ -335,6 +389,9 @@ const ExpierencePage = () => (
             <div class="experience-entry">
               <div class="experience-start-year"> Sept 2019 - Jun 2020</div>
               <div class="experience-description">
+                <div class="year-span">
+                  <span>Sept 2019 - Jun 2020</span>
+                </div>
                 <div class="company-names">
                   <a
                     href="https://csumb.edu/"
@@ -361,6 +418,9 @@ const ExpierencePage = () => (
             <div class="experience-entry">
               <div class="experience-start-year"> Apr 2019 - Aug 2019</div>
               <div class="experience-description">
+                <div class="year-span">
+                  <span>Apr 2019 - Aug 2019</span>
+                </div>
                 <div class="company-names">
                   <a
                     href="https://www.rpcity.org/"
@@ -391,6 +451,12 @@ const ExpierencePage = () => (
             <div class="experience-entry">
               <div class="experience-start-year">Aug 2019 - June 2021</div>
               <div class="experience-description">
+                <div class="divider">
+                  <h3>Education</h3>
+                </div>
+                <div class="year-span">
+                  <span>Aug 2019 - Jun 2021</span>
+                </div>
                 <a
                   href="https://csumb.edu/"
                   target="_blank"
@@ -409,6 +475,9 @@ const ExpierencePage = () => (
             <div class="experience-entry">
               <div class="experience-start-year">Jun 2015 - Jun 2019</div>
               <div class="experience-description">
+                <div class="year-span">
+                  <span>Jun 2015 - Jun 2019</span>
+                </div>
                 <a
                   href="https://www.santarosa.edu/"
                   target="_blank"
@@ -434,6 +503,12 @@ const ExpierencePage = () => (
             <div class="experience-entry">
               <div class="experience-start-year">Dec 2010</div>
               <div class="experience-description">
+                <div class="divider">
+                  <h3>Achievements</h3>
+                </div>
+                <div class="year-span">
+                  <span>Dec 2010</span>
+                </div>
                 <a
                   href="https://www.scouting.org/"
                   target="_blank"
@@ -474,61 +549,132 @@ const ProjectsPage = () => {
     borderBottom: "1px solid #ddd", // Horizontal line below each cell
   };
 
+  const tableStyleMobile = {
+    borderCollapse: "collapse",
+    marginLeft: "20px",
+    marginRight: "10px",
+  };
+
+  const thStyleMobile = {
+    padding: "10px", // Adjust padding for headers
+    color: "#e6e6e6",
+    textAlign: "left",
+    borderBottom: "1px solid #ddd", // Horizontal line below header
+  };
+
+  const tdStyleMobile = {
+    padding: "5px", // Padding for table cells
+    borderBottom: "1px solid #ddd", // Horizontal line below each cell
+  };
+
   return (
     <>
       <div className="app-container">
         <div className="sections-container">
-          <a href="/" rel="noreferrer" className="link">
-            <div className="job-title" style={{ paddingTop: "20px" }}>
-              <span>&#8592;</span> Home
-            </div>
-          </a>
-          <div class="table-entry">
-            <table style={tableStyle}>
-              <thead>
-                <tr>
-                  <th style={thStyle}>Year</th>
-                  <th style={thStyle}>Project Name</th>
-                  <th style={thStyle}>Description</th>
-                  <th style={thStyle}>Built/Designed with</th>
-                  <th style={thStyle}>Project Link</th>
-                </tr>
-              </thead>
-              <tbody>
-                {ProjectsContainer.map((project, projectIndex) => (
-                  <tr key={projectIndex}>
-                    <td style={tdStyle}>{project[0][0]}</td>
-                    <td style={{ ...tdStyle, color: "#e6e6e6" }}>
-                      {project[0][1]}
-                    </td>
-                    <td style={tdStyle}>{project[0][2]}</td>
-                    <td style={tdStyle}>
-                      <ProjectTags
-                        AllTags={ProjectTagContainer}
-                        IndexOfAllTags={projectIndex}
-                      />
-                    </td>
-                    <td style={tdStyle}>
-                      {typeof project[0][3] === "string" &&
-                      project[0][3] !== "" ? (
-                        <a
-                          href={project[0][3]}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="link"
-                        >
-                          <div className="project-link">
-                            {project[0][3]} <span>&#8599;</span>
-                          </div>
-                        </a>
-                      ) : (
-                        <div className="project-link">No link available.</div>
-                      )}
-                    </td>
+          <div class="hide-on-mobile">
+            <a href="/" rel="noreferrer" className="link">
+              <div className="job-title" style={{ paddingTop: "20px" }}>
+                <span>&#8592;</span> Home
+              </div>
+            </a>
+
+            <div class="table-entry">
+              <table style={tableStyle}>
+                <thead>
+                  <tr>
+                    <th style={thStyle}>Year</th>
+                    <th style={thStyle}>Project Name</th>
+                    <th style={thStyle}>Description</th>
+                    <th style={thStyle}>Built/Designed with</th>
+                    <th style={thStyle}>Project Link</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {ProjectsContainer.map((project, projectIndex) => (
+                    <tr key={projectIndex}>
+                      <td style={tdStyle}>{project[0][0]}</td>
+                      <td style={{ ...tdStyle, color: "#e6e6e6" }}>
+                        {project[0][1]}
+                      </td>
+                      <td style={tdStyle}>{project[0][2]}</td>
+                      <td style={tdStyle}>
+                        <ProjectTags
+                          AllTags={ProjectTagContainer}
+                          IndexOfAllTags={projectIndex}
+                        />
+                      </td>
+                      <td style={tdStyle}>
+                        {typeof project[0][3] === "string" &&
+                        project[0][3] !== "" ? (
+                          <a
+                            href={project[0][3]}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="link"
+                          >
+                            <div className="project-link">
+                              {project[0][3]} <span>&#8599;</span>
+                            </div>
+                          </a>
+                        ) : (
+                          <div className="project-link">No link available.</div>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="show-on-mobile">
+            <a href="/" rel="noreferrer" className="link">
+              <div
+                className="job-title"
+                style={{ paddingTop: "20px", marginLeft: "20px" }}
+              >
+                <span>&#8592;</span> Home
+              </div>
+            </a>
+            <div class="table-entry">
+              <table style={tableStyleMobile}>
+                <thead>
+                  <tr>
+                    <th style={thStyleMobile}>Year</th>
+                    <th style={thStyleMobile}>Project</th>
+                    <th style={thStyleMobile}>Project Link</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {ProjectsContainer.map((project, projectIndex) => (
+                    <tr key={projectIndex}>
+                      <td style={tdStyleMobile}>{project[0][0]}</td>
+                      <td style={{ ...tdStyleMobile, color: "#e6e6e6" }}>
+                        {project[0][1]}
+                      </td>
+                      <td style={tdStyleMobile}>
+                        {typeof project[0][3] === "string" &&
+                        project[0][3] !== "" ? (
+                          <a
+                            href={project[0][3]}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="link"
+                          >
+                            <div className="project-link-mobile">
+                              {project[0][3]} <span>&#8599;</span>
+                            </div>
+                          </a>
+                        ) : (
+                          <div className="project-link-mobile">
+                            No link available.
+                          </div>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

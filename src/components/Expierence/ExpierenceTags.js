@@ -12,7 +12,7 @@ function ExperienceTags({ AllTags, IndexOfAllTags }) {
 
   const displayedTags = useMemo(() => {
     // Show more tags based on the showMore state
-    const tagsToDisplay = showMore ? tags : tags.slice(0, 7);
+    const tagsToDisplay = showMore ? tags : tags.slice(0, 7); //TODO: Hide tags on mobile
     return tagsToDisplay;
   }, [tags, showMore]);
 
@@ -26,6 +26,7 @@ function ExperienceTags({ AllTags, IndexOfAllTags }) {
 
   return (
     // TODO: Adjust tag class to go to a new line if there is more than X in one row
+    // TODO: Hide button on mobile
     <div className="tags">
       {displayedTags.map((tag, index) => {
         return (

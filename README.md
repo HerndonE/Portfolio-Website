@@ -49,13 +49,15 @@
 
 ### Color Reference 🎨
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#08120e](https://via.placeholder.com/10/08120e?text=+) #08120e  |
-| Headers | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
-| Text Color | ![#a3a2a2](https://via.placeholder.com/10/a3a2a2?text=+) #a3a2a2 |
-| Tag Primary Color | ![#132f4a](https://via.placeholder.com/10/132f4a?text=+) #132f4a |
-| Tag Text Color | ![#58dad4](https://via.placeholder.com/10/58dad4?text=+) #58dad4 |
+| Color              | Hex Code     | Preview                     |
+|--------------------|--------------|-----------------------------|
+| Primary Color      | `#08120e`    | <span style="display:inline-block;width:16px;height:16px;background:#08120e;border:1px solid #ccc;"></span> |
+| Headers            | `#EEEEEE`    | <span style="display:inline-block;width:16px;height:16px;background:#EEEEEE;border:1px solid #ccc;"></span> |
+| Text Color         | `#a3a2a2`    | <span style="display:inline-block;width:16px;height:16px;background:#a3a2a2;border:1px solid #ccc;"></span> |
+| Tag Primary Color  | `#132f4a`    | <span style="display:inline-block;width:16px;height:16px;background:#132f4a;border:1px solid #ccc;"></span> |
+| Tag Text Color     | `#58dad4`    | <span style="display:inline-block;width:16px;height:16px;background:#58dad4;border:1px solid #ccc;"></span> |
+
+
 
 
 <!---
