@@ -51,11 +51,11 @@
 
 | Color              | Hex Code     | Preview                     |
 |--------------------|--------------|-----------------------------|
-| Primary Color      | `#08120e`    | <span style="display:inline-block;width:16px;height:16px;background:#08120e;border:1px solid #ccc;"></span> |
-| Headers            | `#EEEEEE`    | <span style="display:inline-block;width:16px;height:16px;background:#EEEEEE;border:1px solid #ccc;"></span> |
-| Text Color         | `#a3a2a2`    | <span style="display:inline-block;width:16px;height:16px;background:#a3a2a2;border:1px solid #ccc;"></span> |
-| Tag Primary Color  | `#132f4a`    | <span style="display:inline-block;width:16px;height:16px;background:#132f4a;border:1px solid #ccc;"></span> |
-| Tag Text Color     | `#58dad4`    | <span style="display:inline-block;width:16px;height:16px;background:#58dad4;border:1px solid #ccc;"></span> |
+| Primary Color      | `#08120e`    | <span style="display:inline-block;width:16px;height:16px;"><img src="https://img.shields.io/badge/-%2308120e.svg?&style=for-the-badge&logoColor=white"/></a></span> |
+| Headers            | `#EEEEEE`    | <span style="display:inline-block;width:16px;height:16px;"><img src="https://img.shields.io/badge/-%23EEEEEE.svg?&style=for-the-badge&logoColor=white"/></a></span> |
+| Text Color         | `#a3a2a2`    | <span style="display:inline-block;width:16px;height:16px;"><img src="https://img.shields.io/badge/-%23a3a2a2.svg?&style=for-the-badge&logoColor=white"/></a></span> |
+| Tag Primary Color  | `#132f4a`    | <span style="display:inline-block;width:16px;height:16px;"><img src="https://img.shields.io/badge/-%23132f4a.svg?&style=for-the-badge&logoColor=white"/></a></span> |
+| Tag Text Color     | `#58dad4`    | <span style="display:inline-block;width:16px;height:16px;"><img src="https://img.shields.io/badge/-%2358dad4.svg?&style=for-the-badge&logoColor=white"/></a></span> |
 
 
 
