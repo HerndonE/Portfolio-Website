@@ -382,9 +382,31 @@ Mobile Responsive Adjustments
     font-weight: bold;
   }
 
+  .nav-footer-icons-mobile { 
+    padding: 0 32px !important;
+    box-sizing: border-box; 
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .nav-footer-icons-mobile a {
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 5%;
+  }
+  
+  .nav-footer-icons-mobile i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: rgb(163, 162, 162);
+    transition: color 0.3s;
+  }
+
   .custom-about {
-    width: 100% !important;
-    padding: 0 16px !important;
+    padding: 0 32px !important;
+    box-sizing: border-box; 
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 
   .link-other{
@@ -424,4 +446,14 @@ Mobile Responsive Adjustments
     padding-right: 16px !important;
   }
 
+  .section,
+  .experience-description,
+  .project-entry,
+  .custom-about,
+  .tags,
+  .nav-footer-icons-mobile {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
 }

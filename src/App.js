@@ -268,6 +268,18 @@ const Home = () => (
           </p>
         </div>
       </div>
+      <div class="nav-footer-icons-mobile">
+        <a href="https://github.com/HerndonE" target="_blank" rel="noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ethan-herndon/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
     </div>
   </>
 );
@@ -556,15 +568,15 @@ const ProjectsPage = () => {
   };
 
   const thStyleMobile = {
-    padding: "10px", // Adjust padding for headers
+    padding: "10px",
     color: "#e6e6e6",
     textAlign: "left",
-    borderBottom: "1px solid #ddd", // Horizontal line below header
+    borderBottom: "1px solid #ddd",
   };
 
   const tdStyleMobile = {
-    padding: "5px", // Padding for table cells
-    borderBottom: "1px solid #ddd", // Horizontal line below each cell
+    padding: "5px",
+    borderBottom: "1px solid #ddd",
   };
 
   return (
