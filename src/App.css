@@ -302,7 +302,7 @@ Hover box styles
 Mobile Responsive Adjustments
 =================================*/
 
-.show-on-mobile, .divider, .year-span {
+.show-on-mobile, .divider, .year-span, .nav-footer-icons-mobile {
   display: none;
 }
 
@@ -353,6 +353,7 @@ Mobile Responsive Adjustments
     background-color: var(--primary-color);
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 
   .app-container {
@@ -383,6 +384,7 @@ Mobile Responsive Adjustments
   }
 
   .nav-footer-icons-mobile { 
+    display: block;
     padding: 0 32px !important;
     box-sizing: border-box; 
     max-width: 100%;
