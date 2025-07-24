@@ -12,6 +12,7 @@ import { ProjectTagContainer } from "./components/Projects/ProjectTagData.js";
 import ProjectTags from "./components/Projects/ProjectTags.js";
 import { ProjectsContainer } from "./components/Projects/ProjectsData.js";
 import ScrollToTop from "./components/ScrollToTop.js";
+import HamburgerMenu from "./components/Menu/HamburgerMenu.js";
 
 const ProjectOneIndex = 2;
 const ProjectTwoIndex = 8;
@@ -27,6 +28,11 @@ const handleClick = (id) => {
 // Home Component
 const Home = () => (
   <>
+    <link
+      // Hamburger Icon
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    ></link>
     <div className="app-container">
       <div class="hide-on-mobile">
         <CustomNav
@@ -47,6 +53,12 @@ const Home = () => (
         />
       </div>
       <div className="sections-container">
+        <div class="show-on-mobile">
+          <div>
+            <HamburgerMenu />
+            {/* Rest of your app */}
+          </div>
+        </div>
         <div className="custom-about">
           <div className="aligned-content">
             <div class="show-on-mobile">
