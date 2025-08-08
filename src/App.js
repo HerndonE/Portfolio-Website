@@ -488,8 +488,8 @@ const ExpierencePage = () => (
                   className="link"
                 >
                   <div className="job-title">
-                    B.S. Computer Science - California State Monetery Bay{" "}
-                    <span>&#8599;</span>
+                    B.S. Computer Science - California State University-Monterey
+                    Bay <span>&#8599;</span>
                   </div>
                 </a>
               </div>
