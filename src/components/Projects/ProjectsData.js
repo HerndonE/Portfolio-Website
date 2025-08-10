@@ -1,3 +1,12 @@
+const BZCCGameWatch = [
+  [
+    "2025",
+    "Battlezone Combat Commander Game Watch",
+    "A real-time, open-source platform for tracking and watching Battlezone: Combat Commander matches live.",
+    "https://battlezonescrapfield.github.io/BZCC-Website/",
+  ],
+];
+
 const BZCCStatistics = [
   [
     "2025",
@@ -132,6 +141,7 @@ const HoverTankGame = [
 ];
 
 const ProjectsContainer = [
+  BZCCGameWatch,
   BZCCStatistics,
   PortfolioWebsite,
   MineCraftBot,

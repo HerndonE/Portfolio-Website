@@ -1,3 +1,11 @@
+const BCCCWebsiteGameWathcer = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "API",
+  "Battlezone",
+  "Github Pages",
+];
 const BZCCStats = ["Python", "API", "JSON", "Statistics", "Battlezone"];
 
 const PortfolioWeb = [
@@ -23,6 +31,7 @@ const PingTool = ["Python", "Tkinter", "Command Prompt"];
 const HoverTankGame = ["C#", "Unity", "3D"];
 
 const ProjectTagContainer = [
+  BCCCWebsiteGameWathcer,
   BZCCStats,
   PortfolioWeb,
   MineCraftBot,

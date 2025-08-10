@@ -14,9 +14,9 @@ import { ProjectsContainer } from "./components/Projects/ProjectsData.js";
 import ScrollToTop from "./components/ScrollToTop.js";
 import HamburgerMenu from "./components/Menu/HamburgerMenu.js";
 
-const ProjectOneIndex = 2;
-const ProjectTwoIndex = 8;
-const ProjectThreeIndex = 9;
+const ProjectOneIndex = 3;
+const ProjectTwoIndex = 9;
+const ProjectThreeIndex = 10;
 
 const handleClick = (id) => {
   const element = document.getElementById(id);
