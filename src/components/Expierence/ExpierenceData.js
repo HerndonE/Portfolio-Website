@@ -18,12 +18,15 @@ const MightyOakMedicalExpierence = [
 ];
 const AtlassianExpierence = [
   "Assisting over 8000 Atlassian employees worldwide by responding to help chat, tickets, and providing level 2 technical support.",
+  "Provided remote support and ensure reliable access for our Atlassian employees.",
   "Utilizing Jira to manage and work on assigned ticket orders efficiently.",
   "Leveraging Jira's integrated reporting and analytics tools to gain valuable insights into team performance and identify areas for enhancement.",
   "Employing Confluence as a tool for organizing and maintaining comprehensive documentation.",
   "Utilizing Workspace One and Jamf mobile device management solutions to ensure compliance of employee devices with Atlassian requirements.",
   "Successfully integrating more than 5 SAML (Security Assertion Markup Language) integrations.",
   "Streamlining SAML change ticket processes through automation.",
+  "Support AV setups in meeting spaces.",
+  "Manage IT inventory and device lifecycle from deployment to decommission.",
 ];
 const RohnertParkExpierence = [
   "Coordinate and participate in various information systems' improvement projects; estimate time and cost; assist with review of completed projects to ensure goals are met and installations are compatible with existing systems.",
@@ -35,6 +38,9 @@ const RohnertParkExpierence = [
   "Read and comprehend computer hardware and software documentation to solve technical problems. Understand and explain system concepts to non-technical users.",
   "Deleting criminal evidence on digital devices for record’s keeping.",
   "Installed key Alcatel switches for Sonoma State University Police. Configured for VLAN, DHCP, Static routing that are still present to this day.",
+  "Support AV setups in meeting spaces.",
+  "Manage IT inventory and device lifecycle from deployment to decommission.",
+  "Maintained and improved networking infrastructure (Wi-Fi, VPN, DHCP, DNS, Firewalls).",
 ];
 const CSUMBExpierence = [
   "Answering telephone and providing basic network tech support to over 5000 students and faculty at CSUMB.",
