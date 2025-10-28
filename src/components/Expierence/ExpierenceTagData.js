@@ -1,3 +1,4 @@
+const EchoStarTag = [];
 const MightyOakMedicalTags = [
   "Python",
   "AWS",
@@ -53,6 +54,7 @@ const CSUMBTags = [
   "Customer Service",
 ];
 const ExperienceTagContainer = [
+  EchoStarTag,
   MightyOakMedicalTags,
   AtlassianTags,
   RohnertParkTags,

@@ -67,7 +67,7 @@ const Home = () => (
               </div>
               <br />
               <div class="role">
-                <h3>Senior Software Engineer</h3>
+                <h3>Business Operations Analyst II</h3>
               </div>
               <br />
               <p>
@@ -103,11 +103,41 @@ const Home = () => (
         <div id="experience" className="section">
           <p className="custom-paragraph">
             <div class="experience-entry">
-              <div class="experience-start-year">Jan 2022 - Jul 2025</div>
+              <div class="experience-start-year"> Oct 2025 - Present</div>
               <div class="experience-description">
                 <div class="divider">
                   <h3>Experience</h3>
                 </div>
+                <div class="year-span">
+                  <span>Oct 2025 - Present</span>
+                </div>
+                <div class="company-names">
+                  <a
+                    href="https://www.echostar.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    <div class="job-title">
+                      Business Operations Analyst II - EchoStar{" "}
+                      <span>&#8599;</span>{" "}
+                    </div>
+                  </a>
+                </div>
+                <Expierence
+                  AllExpierences={ExpierenceContainer}
+                  IndexOfAllExpierences={0}
+                />
+                <ExperienceTags
+                  AllTags={ExperienceTagContainer}
+                  IndexOfAllTags={0}
+                />
+              </div>
+            </div>
+
+            <div class="experience-entry">
+              <div class="experience-start-year">Jan 2022 - Jul 2025</div>
+              <div class="experience-description">
                 <div class="year-span">
                   <span>Jan 2022 - Jul 2025</span>
                 </div>
@@ -125,36 +155,6 @@ const Home = () => (
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <h3 style={{ marginRight: "8px" }}>Software Engineer</h3>
                   <span>Jan 2022 - Jan 2025</span>
-                </div>
-                <Expierence
-                  AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={0}
-                />
-                <ExperienceTags
-                  AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={0}
-                />
-              </div>
-            </div>
-
-            <div class="experience-entry">
-              <div class="experience-start-year"> July 2021 - Dec 2021</div>
-              <div class="experience-description">
-                <div class="year-span">
-                  <span>July 2021 - Dec 2021</span>
-                </div>
-                <div class="company-names">
-                  <a
-                    href="https://www.atlassian.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="link"
-                  >
-                    <div class="job-title">
-                      Junior Technical Support Specialist - Atlassian{" "}
-                      <span>&#8599;</span>{" "}
-                    </div>
-                  </a>
                 </div>
                 <Expierence
                   AllExpierences={ExpierenceContainer}
@@ -314,7 +314,7 @@ const ExpierencePage = () => (
         <div id="experience" className="section">
           <p className="custom-paragraph">
             <div class="experience-entry">
-              <div class="experience-start-year">Jan 2022 - Jul 2025</div>
+              <div class="experience-start-year"> Oct 2025 - Present</div>
               <div class="experience-description">
                 <a href="/" rel="noreferrer" className="link">
                   <div className="job-title">
@@ -324,6 +324,35 @@ const ExpierencePage = () => (
                 <div class="divider">
                   <h3>Experience</h3>
                 </div>
+                <div class="year-span">
+                  <span>Oct 2025 - Present</span>
+                </div>
+                <div class="company-names">
+                  <a
+                    href="https://www.echostar.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    <div class="job-title">
+                      Business Operations Analyst II - EchoStar{" "}
+                      <span>&#8599;</span>{" "}
+                    </div>
+                  </a>
+                </div>
+                <Expierence
+                  AllExpierences={ExpierenceContainer}
+                  IndexOfAllExpierences={0}
+                />
+                <ExperienceTags
+                  AllTags={ExperienceTagContainer}
+                  IndexOfAllTags={0}
+                />
+              </div>
+            </div>
+            <div class="experience-entry">
+              <div class="experience-start-year">Jan 2022 - Jul 2025</div>
+              <div class="experience-description">
                 <div class="year-span">
                   <span>Jan 2022 - Jul 2025</span>
                 </div>
@@ -344,11 +373,11 @@ const ExpierencePage = () => (
                 </div>
                 <Expierence
                   AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={0}
+                  IndexOfAllExpierences={1}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={0}
+                  IndexOfAllTags={1}
                 />
               </div>
             </div>
@@ -373,11 +402,11 @@ const ExpierencePage = () => (
                 </div>
                 <Expierence
                   AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={1}
+                  IndexOfAllExpierences={2}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={1}
+                  IndexOfAllTags={2}
                 />
               </div>
             </div>
@@ -402,11 +431,11 @@ const ExpierencePage = () => (
                 </div>
                 <Expierence
                   AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={2}
+                  IndexOfAllExpierences={3}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={2}
+                  IndexOfAllTags={3}
                 />
               </div>
             </div>
@@ -431,11 +460,11 @@ const ExpierencePage = () => (
                 </div>
                 <Expierence
                   AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={3}
+                  IndexOfAllExpierences={4}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={3}
+                  IndexOfAllTags={4}
                 />
               </div>
             </div>
@@ -460,11 +489,11 @@ const ExpierencePage = () => (
                 </div>
                 <Expierence
                   AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={2}
+                  IndexOfAllExpierences={3}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={2}
+                  IndexOfAllTags={3}
                 />
               </div>
             </div>

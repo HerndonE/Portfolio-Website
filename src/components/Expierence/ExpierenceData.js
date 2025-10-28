@@ -1,3 +1,5 @@
+const EchoStarExpierence = ["Job description coming soon!"];
+
 const MightyOakMedicalExpierence = [
   "Designed, developed, and maintained a dynamic full-stack web and mobile application utilizing Flutter, Elixir, React.js, Docker, AWS (S3), and PostgreSQL, serving both internal and over 150 external users via the mobile application. Ensure optimal performance and scalability through ongoing support and maintenance of the application stack.",
   "Converting pre-existing in house macros (Visual Basic) in SolidWorks 2016 to new maintainable high quality codebases such as Python.",
@@ -51,6 +53,7 @@ const CSUMBExpierence = [
   "Confidently installed numerous network peripherals such as cameras, door locks and Wifi access points.",
 ];
 const ExpierenceContainer = [
+  EchoStarExpierence,
   MightyOakMedicalExpierence,
   AtlassianExpierence,
   RohnertParkExpierence,
