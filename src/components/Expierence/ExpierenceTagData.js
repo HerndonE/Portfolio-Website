@@ -1,4 +1,14 @@
-const EchoStarTag = [];
+const EchoStarTag = [
+  "Python",
+  "MSSQL",
+  "Git",
+  "ServiceNow",
+  "GSuite",
+  "Freshdesk",
+  "Jira",
+  "Confluence",
+  "Automation",
+];
 const MightyOakMedicalTags = [
   "Python",
   "AWS",

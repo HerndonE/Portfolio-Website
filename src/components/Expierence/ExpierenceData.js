@@ -1,4 +1,8 @@
-const EchoStarExpierence = ["Job description coming soon!"];
+const EchoStarExpierence = [
+  "Manage and optimize ticketing applications and internal domains, ensuring efficient provisioning, routing, and resolution of agents/internal employee service tickets.",
+  "Design and implement automation rules, routing logic, and interface enhancements to streamline case management processes.",
+  "Gather, analyze, and document requirements from multiple stakeholders to support development and process optimization.",
+];
 
 const MightyOakMedicalExpierence = [
   "Designed, developed, and maintained a dynamic full-stack web and mobile application utilizing Flutter, Elixir, React.js, Docker, AWS (S3), and PostgreSQL, serving both internal and over 150 external users via the mobile application. Ensure optimal performance and scalability through ongoing support and maintenance of the application stack.",
