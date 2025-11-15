@@ -2,6 +2,7 @@ const EchoStarExpierence = [
   "Manage and optimize ticketing applications and internal domains, ensuring efficient provisioning, routing, and resolution of agents/internal employee service tickets.",
   "Design and implement automation rules, routing logic, and interface enhancements to streamline case management processes.",
   "Gather, analyze, and document requirements from multiple stakeholders to support development and process optimization.",
+  "Design and maintain Python scripts to interface with internal and external APIs, streamlining ticketing operations and data management.",
 ];
 
 const MightyOakMedicalExpierence = [

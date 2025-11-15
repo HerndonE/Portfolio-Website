@@ -8,6 +8,7 @@ const EchoStarTag = [
   "Jira",
   "Confluence",
   "Automation",
+  "Obsidian",
 ];
 const MightyOakMedicalTags = [
   "Python",

@@ -93,7 +93,7 @@ const Home = () => (
             <ul className="ul-modified">
               <li>Python</li>
               <li>AWS (EC2)</li>
-              <li>Flutter</li>
+              <li>D3.js</li>
               <li>Discord.py</li>
               <li>SQL</li>
               <li>React</li>
