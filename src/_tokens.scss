@@ -1,0 +1,43 @@
+// CSS custom properties (runtime-themable)
+:root {
+  --primary-color: #08120e;
+  --header-color: #eeeeee;
+  --text-color: #a3a2a2;
+  --tag-primary-color: #132f4a;
+  --tag-text-color: #58dad4;
+  --primary-link-color: #add8e6;
+  --muted-text-color: rgb(163, 162, 162);
+  --soft-text-color: rgb(230, 230, 230);
+  --divider-color: #444;
+  --border-line-color: #ccc;
+  --tag-hover-color: #0056b3;
+}
+
+// Layout
+$sidebar-width: 250px;
+$sections-margin: 350px;
+$section-width: 800px;
+$experience-offset: 240px;
+$experience-year-col: 180px;
+$mobile-padding: 16px;
+
+// Breakpoint
+$breakpoint-mobile: 768px;
+
+@mixin mobile {
+  @media only screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+// Reusable pill (tags + button)
+@mixin tag-pill {
+  background-color: var(--tag-primary-color);
+  color: var(--tag-text-color);
+  font-weight: bold;
+  padding: 8px 12px;
+  margin-right: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  white-space: nowrap;
+}

@@ -1,11 +1,11 @@
-const EchoStarExpierence = [
+const EchoStarExperience = [
   "Manage and optimize ticketing applications and internal domains, ensuring efficient provisioning, routing, and resolution of agents/internal employee service tickets.",
   "Design and implement automation rules, routing logic, and interface enhancements to streamline case management processes.",
   "Gather, analyze, and document requirements from multiple stakeholders to support development and process optimization.",
   "Design and maintain Python scripts to interface with internal and external APIs, streamlining ticketing operations and data management.",
 ];
 
-const MightyOakMedicalExpierence = [
+const MightyOakMedicalExperience = [
   "Designed, developed, and maintained a dynamic full-stack web and mobile application utilizing Flutter, Elixir, React.js, Docker, AWS (S3), and PostgreSQL, serving both internal and over 150 external users via the mobile application. Ensure optimal performance and scalability through ongoing support and maintenance of the application stack.",
   "Converting pre-existing in house macros (Visual Basic) in SolidWorks 2016 to new maintainable high quality codebases such as Python.",
   "Collaborate with other developers and engineers to identify opportunities for macro conversion and develop a process for maintaining and improving code quality.",
@@ -23,7 +23,7 @@ const MightyOakMedicalExpierence = [
   "Using Jira for Agile and SCRUM methodologies.",
   "Conform and uphold to FDA standards by working closely with stakeholders to ensure that compliance is a priority and that all projects and processes are developed with compliance in mind.",
 ];
-const AtlassianExpierence = [
+const AtlassianExperience = [
   "Assisting over 8000 Atlassian employees worldwide by responding to help chat, tickets, and providing level 2 technical support.",
   "Provided remote support and ensure reliable access for our Atlassian employees.",
   "Utilizing Jira to manage and work on assigned ticket orders efficiently.",
@@ -35,7 +35,7 @@ const AtlassianExpierence = [
   "Support AV setups in meeting spaces.",
   "Manage IT inventory and device lifecycle from deployment to decommission.",
 ];
-const RohnertParkExpierence = [
+const RohnertParkExperience = [
   "Coordinate and participate in various information systems' improvement projects; estimate time and cost; assist with review of completed projects to ensure goals are met and installations are compatible with existing systems.",
   "Designed and created a remote managing system using Cisco’s Meraki management MDM software to deploy 50+ configurable iPhones and various other devices to police officers.",
   "Using Python, I programmed and developed a graphical user interface for the I.T. staff at Rohnert Park Public Safety to easily ping static and dynamic devices on the network that speeds up the troubleshooting process.",
@@ -49,7 +49,7 @@ const RohnertParkExpierence = [
   "Manage IT inventory and device lifecycle from deployment to decommission.",
   "Maintained and improved networking infrastructure (Wi-Fi, VPN, DHCP, DNS, Firewalls).",
 ];
-const CSUMBExpierence = [
+const CSUMBExperience = [
   "Answering telephone and providing basic network tech support to over 5000 students and faculty at CSUMB.",
   "Helped students and faculty troubleshoot critical applications and hardware devices in the field to ensure that the learning environment runs with no disturbance.",
   "Used surveying network equipment and Wifi network signal strength to ensure users have 500 megabit per second download speeds via wireless and 1 gigabit per second speeds via Ethernet.",
@@ -57,12 +57,12 @@ const CSUMBExpierence = [
   "Using TeamDynamix to keep track and work on assigned ticket orders.",
   "Confidently installed numerous network peripherals such as cameras, door locks and Wifi access points.",
 ];
-const ExpierenceContainer = [
-  EchoStarExpierence,
-  MightyOakMedicalExpierence,
-  AtlassianExpierence,
-  RohnertParkExpierence,
-  CSUMBExpierence,
+const ExperienceContainer = [
+  EchoStarExperience,
+  MightyOakMedicalExperience,
+  AtlassianExperience,
+  RohnertParkExperience,
+  CSUMBExperience,
 ];
 
-export { ExpierenceContainer };
+export { ExperienceContainer };

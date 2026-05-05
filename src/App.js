@@ -1,13 +1,13 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import "./styles.scss";
 import CustomNav from "./components/CustomNav.js";
 import CustomNavXp from "./components/CustomNavExp.js";
-import { ExperienceTagContainer } from "./components/Expierence/ExpierenceTagData.js";
-import ExperienceTags from "./components/Expierence/ExpierenceTags.js";
-import { ExpierenceContainer } from "./components/Expierence/ExpierenceData.js";
-import Expierence from "./components/Expierence/Expierence.js";
+import { ExperienceTagContainer } from "./components/Experience/ExperienceTagData.js";
+import ExperienceTags from "./components/Experience/ExperienceTags.js";
+import { ExperienceContainer } from "./components/Experience/ExperienceData.js";
+import Experience from "./components/Experience/Experience.js";
 import { ProjectTagContainer } from "./components/Projects/ProjectTagData.js";
 import ProjectTags from "./components/Projects/ProjectTags.js";
 import { ProjectsContainer } from "./components/Projects/ProjectsData.js";
@@ -34,7 +34,7 @@ const Home = () => (
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     ></link>
     <div className="app-container">
-      <div class="hide-on-mobile">
+      <div className="hide-on-mobile">
         <CustomNav
           li={[
             ["About", "#/about"],
@@ -53,7 +53,7 @@ const Home = () => (
         />
       </div>
       <div className="sections-container">
-        <div class="show-on-mobile">
+        <div className="show-on-mobile">
           <div>
             <HamburgerMenu />
             {/* Rest of your app */}
@@ -61,12 +61,12 @@ const Home = () => (
         </div>
         <div className="custom-about">
           <div className="aligned-content">
-            <div class="show-on-mobile">
-              <div class="name">
+            <div className="show-on-mobile">
+              <div className="name">
                 <h1>Ethan Herndon</h1>
               </div>
               <br />
-              <div class="role">
+              <div className="role">
                 <h3>Business Operations Analyst II</h3>
               </div>
               <br />
@@ -75,7 +75,7 @@ const Home = () => (
                 applications from the ground up.
               </p>
             </div>
-            <div class="divider">
+            <div className="divider">
               <h3>About</h3>
             </div>
             <p>
@@ -101,32 +101,32 @@ const Home = () => (
           </div>
         </div>
         <div id="experience" className="section">
-          <p className="custom-paragraph">
-            <div class="experience-entry">
-              <div class="experience-start-year"> Oct 2025 - Present</div>
-              <div class="experience-description">
-                <div class="divider">
+          <div className="custom-paragraph">
+            <div className="experience-entry">
+              <div className="experience-start-year"> Oct 2025 - Present</div>
+              <div className="experience-description">
+                <div className="divider">
                   <h3>Experience</h3>
                 </div>
-                <div class="year-span">
+                <div className="year-span">
                   <span>Oct 2025 - Present</span>
                 </div>
-                <div class="company-names">
+                <div className="company-names">
                   <a
                     href="https://www.echostar.com/"
                     target="_blank"
                     rel="noreferrer"
                     className="link"
                   >
-                    <div class="job-title">
+                    <div className="job-title">
                       Business Operations Analyst II - EchoStar{" "}
                       <span>&#8599;</span>{" "}
                     </div>
                   </a>
                 </div>
-                <Expierence
-                  AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={0}
+                <Experience
+                  AllExperiences={ExperienceContainer}
+                  IndexOfAllExperiences={0}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
@@ -135,10 +135,10 @@ const Home = () => (
               </div>
             </div>
 
-            <div class="experience-entry">
-              <div class="experience-start-year">Jan 2022 - Jul 2025</div>
-              <div class="experience-description">
-                <div class="year-span">
+            <div className="experience-entry">
+              <div className="experience-start-year">Jan 2022 - Jul 2025</div>
+              <div className="experience-description">
+                <div className="year-span">
                   <span>Jan 2022 - Jul 2025</span>
                 </div>
                 <a
@@ -156,9 +156,9 @@ const Home = () => (
                   <h3 style={{ marginRight: "8px" }}>Software Engineer</h3>
                   <span>Jan 2022 - Jan 2025</span>
                 </div>
-                <Expierence
-                  AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={1}
+                <Experience
+                  AllExperiences={ExperienceContainer}
+                  IndexOfAllExperiences={1}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
@@ -166,8 +166,8 @@ const Home = () => (
                 />
               </div>
             </div>
-          </p>
-          <a href="#/expierence" className="link">
+          </div>
+          <a href="#/experience" className="link">
             <div className="link-other">
               SEE FULL EXPERIENCE HERE
               <span>&#8599;</span>{" "}
@@ -175,10 +175,10 @@ const Home = () => (
           </a>
         </div>
         <div id="projects" className="section">
-          <p className="custom-paragraph">
-            <div class="experience-entry">
-              <div class="hide-project-image">
-                <div class="project-image">
+          <div className="custom-paragraph">
+            <div className="experience-entry">
+              <div className="hide-project-image">
+                <div className="project-image">
                   <img
                     src={`${process.env.PUBLIC_URL}/img/mcd-icon.png`}
                     alt="Project Icon"
@@ -187,8 +187,8 @@ const Home = () => (
                   />
                 </div>
               </div>
-              <div class="experience-description">
-                <div class="divider">
+              <div className="experience-description">
+                <div className="divider">
                   <h3>Projects</h3>
                 </div>
                 <a
@@ -197,7 +197,7 @@ const Home = () => (
                   rel="noreferrer"
                   className="link"
                 >
-                  <div class="job-title">
+                  <div className="job-title">
                     {ProjectsContainer[ProjectOneIndex][0][1]}{" "}
                     <span>&#8599;</span>{" "}
                   </div>
@@ -209,9 +209,9 @@ const Home = () => (
                 />
               </div>
             </div>
-            <div class="experience-entry">
-              <div class="hide-project-image">
-                <div class="project-image">
+            <div className="experience-entry">
+              <div className="hide-project-image">
+                <div className="project-image">
                   <img
                     src={`${process.env.PUBLIC_URL}/img/weather-app.png`}
                     alt="Project Icon"
@@ -220,14 +220,14 @@ const Home = () => (
                   />
                 </div>
               </div>
-              <div class="experience-description">
+              <div className="experience-description">
                 <a
                   href={ProjectsContainer[ProjectTwoIndex][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
-                  <div class="job-title">
+                  <div className="job-title">
                     {ProjectsContainer[ProjectTwoIndex][0][1]}{" "}
                     <span>&#8599;</span>{" "}
                   </div>
@@ -240,9 +240,9 @@ const Home = () => (
                 />
               </div>
             </div>
-            <div class="experience-entry">
-              <div class="hide-project-image">
-                <div class="project-image">
+            <div className="experience-entry">
+              <div className="hide-project-image">
+                <div className="project-image">
                   <img
                     src={`https://raw.githubusercontent.com/HerndonE/Battlezone-Missions/master/BZCC%20Lost%20Missions%20Campaign/Images/LMBZCCLogo.png`}
                     alt="Project Icon"
@@ -251,14 +251,14 @@ const Home = () => (
                   />
                 </div>
               </div>
-              <div class="experience-description">
+              <div className="experience-description">
                 <a
                   href={ProjectsContainer[ProjectThreeIndex][0][3]}
                   target="_blank"
                   rel="noreferrer"
                   className="link"
                 >
-                  <div class="job-title">
+                  <div className="job-title">
                     {ProjectsContainer[ProjectThreeIndex][0][1]}{" "}
                     <span>&#8599;</span>{" "}
                   </div>
@@ -277,30 +277,30 @@ const Home = () => (
                 <span>&#8599;</span>
               </div>
             </a>
-          </p>
+          </div>
         </div>
       </div>
-      <div class="nav-footer-icons-mobile">
+      <div className="nav-footer-icons-mobile">
         <a href="https://github.com/HerndonE" target="_blank" rel="noreferrer">
-          <i class="bi bi-github"></i>
+          <i className="bi bi-github"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/ethan-herndon/"
           target="_blank"
           rel="noreferrer"
         >
-          <i class="bi bi-linkedin"></i>
+          <i className="bi bi-linkedin"></i>
         </a>
       </div>
     </div>
   </>
 );
 
-// Expierence Component
-const ExpierencePage = () => (
+// Experience Component
+const ExperiencePage = () => (
   <>
     <div className="app-container">
-      <div class="hide-on-mobile">
+      <div className="hide-on-mobile">
         <CustomNavXp
           li={[
             ["Experience", "#/experience"],
@@ -312,37 +312,37 @@ const ExpierencePage = () => (
       </div>
       <div className="sections-container">
         <div id="experience" className="section">
-          <p className="custom-paragraph">
-            <div class="experience-entry">
-              <div class="experience-start-year"> Oct 2025 - Present</div>
-              <div class="experience-description">
+          <div className="custom-paragraph">
+            <div className="experience-entry">
+              <div className="experience-start-year"> Oct 2025 - Present</div>
+              <div className="experience-description">
                 <a href="/" rel="noreferrer" className="link">
                   <div className="job-title">
                     <span>&#8592;</span> Home
                   </div>
                 </a>
-                <div class="divider">
+                <div className="divider">
                   <h3>Experience</h3>
                 </div>
-                <div class="year-span">
+                <div className="year-span">
                   <span>Oct 2025 - Present</span>
                 </div>
-                <div class="company-names">
+                <div className="company-names">
                   <a
                     href="https://www.echostar.com/"
                     target="_blank"
                     rel="noreferrer"
                     className="link"
                   >
-                    <div class="job-title">
+                    <div className="job-title">
                       Business Operations Analyst II - EchoStar{" "}
                       <span>&#8599;</span>{" "}
                     </div>
                   </a>
                 </div>
-                <Expierence
-                  AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={0}
+                <Experience
+                  AllExperiences={ExperienceContainer}
+                  IndexOfAllExperiences={0}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
@@ -350,10 +350,10 @@ const ExpierencePage = () => (
                 />
               </div>
             </div>
-            <div class="experience-entry">
-              <div class="experience-start-year">Jan 2022 - Jul 2025</div>
-              <div class="experience-description">
-                <div class="year-span">
+            <div className="experience-entry">
+              <div className="experience-start-year">Jan 2022 - Jul 2025</div>
+              <div className="experience-description">
+                <div className="year-span">
                   <span>Jan 2022 - Jul 2025</span>
                 </div>
                 <a
@@ -371,9 +371,9 @@ const ExpierencePage = () => (
                   <h3 style={{ marginRight: "8px" }}>Software Engineer</h3>
                   <span>Jan 2022 - Jan 2025</span>
                 </div>
-                <Expierence
-                  AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={1}
+                <Experience
+                  AllExperiences={ExperienceContainer}
+                  IndexOfAllExperiences={1}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
@@ -381,28 +381,28 @@ const ExpierencePage = () => (
                 />
               </div>
             </div>
-            <div class="experience-entry">
-              <div class="experience-start-year"> July 2021 - Dec 2021</div>
-              <div class="experience-description">
-                <div class="year-span">
+            <div className="experience-entry">
+              <div className="experience-start-year"> July 2021 - Dec 2021</div>
+              <div className="experience-description">
+                <div className="year-span">
                   <span>July 2021 - Dec 2021</span>
                 </div>
-                <div class="company-names">
+                <div className="company-names">
                   <a
                     href="https://www.atlassian.com/"
                     target="_blank"
                     rel="noreferrer"
                     className="link"
                   >
-                    <div class="job-title">
+                    <div className="job-title">
                       Junior Technical Support Specialist - Atlassian{" "}
                       <span>&#8599;</span>{" "}
                     </div>
                   </a>
                 </div>
-                <Expierence
-                  AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={2}
+                <Experience
+                  AllExperiences={ExperienceContainer}
+                  IndexOfAllExperiences={2}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
@@ -410,28 +410,28 @@ const ExpierencePage = () => (
                 />
               </div>
             </div>
-            <div class="experience-entry">
-              <div class="experience-start-year"> July 2020 - May 2021</div>
-              <div class="experience-description">
-                <div class="year-span">
+            <div className="experience-entry">
+              <div className="experience-start-year"> July 2020 - May 2021</div>
+              <div className="experience-description">
+                <div className="year-span">
                   <span>July 2020 - May 2021</span>
                 </div>
-                <div class="company-names">
+                <div className="company-names">
                   <a
                     href="https://www.rpcity.org/"
                     target="_blank"
                     rel="noreferrer"
                     className="link"
                   >
-                    <div class="job-title">
+                    <div className="job-title">
                       Information Systems Technician 1 - City of Rohnert Park{" "}
                       <span>&#8599;</span>{" "}
                     </div>
                   </a>
                 </div>
-                <Expierence
-                  AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={3}
+                <Experience
+                  AllExperiences={ExperienceContainer}
+                  IndexOfAllExperiences={3}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
@@ -439,28 +439,28 @@ const ExpierencePage = () => (
                 />
               </div>
             </div>
-            <div class="experience-entry">
-              <div class="experience-start-year"> Sept 2019 - Jun 2020</div>
-              <div class="experience-description">
-                <div class="year-span">
+            <div className="experience-entry">
+              <div className="experience-start-year"> Sept 2019 - Jun 2020</div>
+              <div className="experience-description">
+                <div className="year-span">
                   <span>Sept 2019 - Jun 2020</span>
                 </div>
-                <div class="company-names">
+                <div className="company-names">
                   <a
                     href="https://csumb.edu/"
                     target="_blank"
                     rel="noreferrer"
                     className="link"
                   >
-                    <div class="job-title">
+                    <div className="job-title">
                       Information Technology Technician - California State
                       University, Monterey Bay <span>&#8599;</span>{" "}
                     </div>
                   </a>
                 </div>
-                <Expierence
-                  AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={4}
+                <Experience
+                  AllExperiences={ExperienceContainer}
+                  IndexOfAllExperiences={4}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
@@ -468,28 +468,28 @@ const ExpierencePage = () => (
                 />
               </div>
             </div>
-            <div class="experience-entry">
-              <div class="experience-start-year"> Apr 2019 - Aug 2019</div>
-              <div class="experience-description">
-                <div class="year-span">
+            <div className="experience-entry">
+              <div className="experience-start-year"> Apr 2019 - Aug 2019</div>
+              <div className="experience-description">
+                <div className="year-span">
                   <span>Apr 2019 - Aug 2019</span>
                 </div>
-                <div class="company-names">
+                <div className="company-names">
                   <a
                     href="https://www.rpcity.org/"
                     target="_blank"
                     rel="noreferrer"
                     className="link"
                   >
-                    <div class="job-title">
+                    <div className="job-title">
                       Information Systems Technician 1 - City of Rohnert Park{" "}
                       <span>&#8599;</span>{" "}
                     </div>
                   </a>
                 </div>
-                <Expierence
-                  AllExpierences={ExpierenceContainer}
-                  IndexOfAllExpierences={3}
+                <Experience
+                  AllExperiences={ExperienceContainer}
+                  IndexOfAllExperiences={3}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
@@ -497,17 +497,17 @@ const ExpierencePage = () => (
                 />
               </div>
             </div>
-          </p>
+          </div>
         </div>
         <div id="education" className="section">
-          <p className="custom-paragraph">
-            <div class="experience-entry">
-              <div class="experience-start-year">Aug 2019 - June 2021</div>
-              <div class="experience-description">
-                <div class="divider">
+          <div className="custom-paragraph">
+            <div className="experience-entry">
+              <div className="experience-start-year">Aug 2019 - June 2021</div>
+              <div className="experience-description">
+                <div className="divider">
                   <h3>Education</h3>
                 </div>
-                <div class="year-span">
+                <div className="year-span">
                   <span>Aug 2019 - Jun 2021</span>
                 </div>
                 <a
@@ -523,12 +523,12 @@ const ExpierencePage = () => (
                 </a>
               </div>
             </div>
-          </p>
-          <p className="custom-paragraph">
-            <div class="experience-entry">
-              <div class="experience-start-year">Jun 2015 - Jun 2019</div>
-              <div class="experience-description">
-                <div class="year-span">
+          </div>
+          <div className="custom-paragraph">
+            <div className="experience-entry">
+              <div className="experience-start-year">Jun 2015 - Jun 2019</div>
+              <div className="experience-description">
+                <div className="year-span">
                   <span>Jun 2015 - Jun 2019</span>
                 </div>
                 <a
@@ -548,18 +548,18 @@ const ExpierencePage = () => (
                 </a>
               </div>
             </div>
-          </p>
+          </div>
         </div>
 
         <div id="achievements" className="section">
-          <p className="custom-paragraph">
-            <div class="experience-entry">
-              <div class="experience-start-year">Dec 2010</div>
-              <div class="experience-description">
-                <div class="divider">
+          <div className="custom-paragraph">
+            <div className="experience-entry">
+              <div className="experience-start-year">Dec 2010</div>
+              <div className="experience-description">
+                <div className="divider">
                   <h3>Achievements</h3>
                 </div>
-                <div class="year-span">
+                <div className="year-span">
                   <span>Dec 2010</span>
                 </div>
                 <a
@@ -574,7 +574,7 @@ const ExpierencePage = () => (
                 </a>
               </div>
             </div>
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -624,14 +624,14 @@ const ProjectsPage = () => {
     <>
       <div className="app-container">
         <div className="sections-container">
-          <div class="hide-on-mobile">
+          <div className="hide-on-mobile">
             <a href="/" rel="noreferrer" className="link">
               <div className="job-title" style={{ paddingTop: "20px" }}>
                 <span>&#8592;</span> Home
               </div>
             </a>
 
-            <div class="table-entry">
+            <div className="table-entry">
               <table style={tableStyle}>
                 <thead>
                   <tr>
@@ -679,7 +679,7 @@ const ProjectsPage = () => {
               </table>
             </div>
           </div>
-          <div class="show-on-mobile">
+          <div className="show-on-mobile">
             <a href="/" rel="noreferrer" className="link">
               <div
                 className="job-title"
@@ -688,7 +688,7 @@ const ProjectsPage = () => {
                 <span>&#8592;</span> Home
               </div>
             </a>
-            <div class="table-entry">
+            <div className="table-entry">
               <table style={tableStyleMobile}>
                 <thead>
                   <tr>
@@ -746,7 +746,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="projects" element={<ProjectsPage />} />
-        <Route path="expierence" element={<ExpierencePage />} />
+        <Route path="experience" element={<ExperiencePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

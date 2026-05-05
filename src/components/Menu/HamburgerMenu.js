@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./HamburgerMenu.css";
+import "./HamburgerMenu.scss";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ const HamburgerMenu = () => {
           <ul>
             <strong>
               <li>
-                <Link to="expierence">Experience</Link>
+                <Link to="experience">Experience</Link>
               </li>
               <li>
                 <Link to="projects">Projects</Link>

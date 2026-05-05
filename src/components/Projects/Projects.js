@@ -1,9 +1,9 @@
-import "../../App.css";
+import "../../App.scss";
 
 function Projects({ AllProjects, IndexOfAllProjects }) {
   // Validate index
   if (IndexOfAllProjects < 0 || IndexOfAllProjects >= AllProjects?.length) {
-    return <div>No expierence available for this index.</div>;
+    return <div>No experience available for this index.</div>;
   }
 
   // Get projects for the given index

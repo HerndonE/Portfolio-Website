@@ -1,4 +1,4 @@
-import "../../App.css";
+import "../../App.scss";
 import React, { useMemo, useState } from "react";
 
 function ExperienceTags({ AllTags, IndexOfAllTags }) {

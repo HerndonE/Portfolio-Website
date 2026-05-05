@@ -1,4 +1,4 @@
-@import url("values.css");
+@import './tokens';
 
 .App {
   text-align: center;
@@ -39,10 +39,6 @@
   }
 }
 
-:root {
-  --experience-offset: 240px;
-}
-
 /* ===============================
 Layout Containers
 =================================*/
@@ -53,7 +49,7 @@ Layout Containers
 }
 
 .sections-container {
-  margin-left: 350px;
+  margin-left: $sections-margin;
   display: flex;
   flex-direction: column;
   background-color: var(--primary-color);
@@ -69,7 +65,7 @@ Shared Section Styles
 .section,
 .custom-about {
   flex: 1;
-  width: 800px;
+  width: $section-width;
   flex-direction: column;
   padding-top: 30px;
   padding-bottom: 10px;
@@ -77,16 +73,14 @@ Shared Section Styles
   padding-left: 0;
 }
 
-/* Additional padding for .section, if needed */
 .section {
   padding-top: 30px;
   padding-bottom: 10px;
   padding-right: 50px;
 }
 
-/* For aligned indentation across content blocks */
 .aligned-content {
-  padding-left: var(--experience-offset);
+  padding-left: $experience-offset;
 }
 
 /* ===============================
@@ -115,11 +109,17 @@ Typography & Headings
 .link {
   text-decoration: none;
   color: inherit;
-}
 
-.link:hover .project-link,
-.link:hover .job-title {
-  color: var(--primary-link-color);
+  &:hover {
+    .project-link,
+    .job-title {
+      color: var(--primary-link-color);
+    }
+
+    .link-other {
+      color: var(--muted-text-color);
+    }
+  }
 }
 
 /* ===============================
@@ -127,7 +127,7 @@ About Section
 =================================*/
 
 .about-inner {
-  padding-left: var(--experience-offset);
+  padding-left: $experience-offset;
 }
 
 .ul-modified {
@@ -150,7 +150,7 @@ Experience Section
 
 .experience-entry {
   display: grid;
-  grid-template-columns: 180px auto;
+  grid-template-columns: $experience-year-col auto;
   grid-gap: 10px;
   align-items: center;
   justify-content: start;
@@ -160,11 +160,11 @@ Experience Section
 
 .experience-start-year {
   font-weight: bold;
-  border-right: 2px solid #444;
+  border-right: 2px solid var(--divider-color);
   padding-right: 30px;
   padding-left: 10px;
   white-space: nowrap;
-  color: rgb(230, 230, 230);
+  color: var(--soft-text-color);
 }
 
 .experience-description {
@@ -173,11 +173,11 @@ Experience Section
   flex-direction: column;
   row-gap: 5px;
   line-height: 1.5;
-  padding-left: 50px; /* Still used internally */
-}
+  padding-left: 50px;
 
-.experience-description .link {
-  text-decoration: none;
+  .link {
+    text-decoration: none;
+  }
 }
 
 /* ===============================
@@ -190,14 +190,14 @@ Reusable Info Table Layout
   align-items: center;
   margin-bottom: 50px;
   position: relative;
-}
 
-.table-entry > div {
-  flex: 1;
-}
+  > div {
+    flex: 1;
 
-.table-entry > div:first-child {
-  width: 100px;
+    &:first-child {
+      width: 100px;
+    }
+  }
 }
 
 /* ===============================
@@ -211,14 +211,15 @@ Tags and Tech Stack
 }
 
 .tag {
-  background-color: var(--tag-primary-color);
-  color: var(--tag-text-color);
-  font-weight: bold;
-  padding: 8px 12px;
-  margin-right: 8px;
-  font-size: 14px;
-  border-radius: 8px;
-  white-space: nowrap;
+  @include tag-pill;
+}
+
+.show-more-button {
+  @include tag-pill;
+
+  &:hover {
+    background-color: var(--tag-hover-color);
+  }
 }
 
 .tech-stack {
@@ -237,7 +238,7 @@ Media and Project Display
 
 .break-line {
   width: 100%;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-line-color);
   margin: 10px 0;
 }
 
@@ -247,7 +248,7 @@ Company Info
 
 .company-name {
   font-weight: bold;
-  color: #444;
+  color: var(--divider-color);
 }
 
 .company-names {
@@ -255,22 +256,19 @@ Company Info
   flex-direction: column;
 }
 
-
-/* Test Later 
-Hover box styles 
-.experience-entry:hover::after {*/
+// Hover overlay (experimental)
 .test:hover::after {
-  content: ""; /* Required for the pseudo-element */
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Covers the entire .experience-entry element */
-  height: 100%; /* Covers the entire .experience-entry element */
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
-  z-index: 1; /* Ensure the hover box is above other content */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
-.link-other{
+.link-other {
   padding-top: 10px;
   padding-left: 250px;
   display: flex;
@@ -278,38 +276,24 @@ Hover box styles
   color: var(--tag-text-color);
 }
 
-.link:hover .link-other {
-  color: rgb(163, 162, 162);
-}
+/* ===============================
+Mobile-only display flags (default hidden, toggled in @include mobile below)
+=================================*/
 
-
-.show-more-button {
-  background-color: var(--tag-primary-color);
-  color: var(--tag-text-color);
-  font-weight: bold;
-  padding: 8px 12px; 
-  margin-right: 8px; 
-  font-size: 14px; 
-  border-radius: 8px; 
-  white-space: nowrap;
-}
-
-.show-more-button:hover {
-  background-color: #0056b3;
+.show-on-mobile,
+.divider,
+.year-span,
+.nav-footer-icons-mobile {
+  display: none;
 }
 
 /* ===============================
 Mobile Responsive Adjustments
 =================================*/
 
-.show-on-mobile, .divider, .year-span, .nav-footer-icons-mobile {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-
-  .experience-start-year{
-    display: none !important;;
+@include mobile {
+  .experience-start-year {
+    display: none;
   }
 
   .hide-project-image {
@@ -329,26 +313,27 @@ Mobile Responsive Adjustments
   .divider {
     display: block;
     margin-bottom: 20px;
-  }
 
-  .divider h3 {
-    color: var(--tag-text-color);
-    font-weight: bold;
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
+    h3 {
+      color: var(--tag-text-color);
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .name {
     color: white;
     font-size: 15px;
   }
-  
+
   .role {
-    color: rgb(230, 230, 230);
+    color: var(--soft-text-color);
   }
 
-  html, body {
+  html,
+  body {
     min-height: 100vh;
     background-color: var(--primary-color);
     margin: 0;
@@ -366,8 +351,8 @@ Mobile Responsive Adjustments
   }
 
   .sections-container {
-    margin-left: 0 !important;
-    padding: 0 !important;
+    margin-left: 0;
+    padding: 0;
     background-color: var(--primary-color);
     color: var(--text-color);
     padding-bottom: 100px;
@@ -383,79 +368,77 @@ Mobile Responsive Adjustments
     font-weight: bold;
   }
 
-  .nav-footer-icons-mobile { 
+  .nav-footer-icons-mobile {
     display: block;
-    padding: 0 32px !important;
-    box-sizing: border-box; 
+    padding: 0 32px;
+    box-sizing: border-box;
     max-width: 100%;
     overflow-wrap: break-word;
-  }
 
-  .nav-footer-icons-mobile a {
-    display: inline-block;
-    text-decoration: none;
-    padding-bottom: 5%;
-  }
-  
-  .nav-footer-icons-mobile i {
-    font-size: 24px;
-    margin: 0 10px;
-    color: rgb(163, 162, 162);
-    transition: color 0.3s;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding-bottom: 5%;
+    }
+
+    i {
+      font-size: 24px;
+      margin: 0 10px;
+      color: var(--muted-text-color);
+      transition: color 0.3s;
+    }
   }
 
   .custom-about {
-    padding: 0 32px !important;
-    box-sizing: border-box; 
+    padding: 0 32px;
+    box-sizing: border-box;
     max-width: 100%;
     overflow-wrap: break-word;
   }
 
-  .link-other{
+  .link-other {
     padding-left: 20px;
   }
 
   .aligned-content,
   .about-inner {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .experience-entry {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
-  
+
+  // Zero out container padding so children own their own gutters
   .experience-description,
   .project-entry,
   .project-description {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
-
   .experience-description > *,
-  .project-description > *{
-    padding-left: 16px;
-    padding-right: 16px;
+  .project-description > * {
+    padding-left: $mobile-padding;
+    padding-right: $mobile-padding;
   }
 
   .ul-modified {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: $mobile-padding;
+    padding-right: $mobile-padding;
   }
 
   .section,
-  .experience-description,
-  .project-entry,
   .custom-about,
   .tags,
   .nav-footer-icons-mobile {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: $mobile-padding;
+    padding-right: $mobile-padding;
     width: 100%;
   }
 }

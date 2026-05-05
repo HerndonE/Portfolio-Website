@@ -1,24 +1,24 @@
-import "../../App.css";
+import "../../App.scss";
 
-function Expierence({ AllExpierences, IndexOfAllExpierences }) {
+function Experience({ AllExperiences, IndexOfAllExperiences }) {
   // Validate index
   if (
-    IndexOfAllExpierences < 0 ||
-    IndexOfAllExpierences >= AllExpierences?.length
+    IndexOfAllExperiences < 0 ||
+    IndexOfAllExperiences >= AllExperiences?.length
   ) {
-    return <div>No expierence available for this index.</div>;
+    return <div>No experience available for this index.</div>;
   }
 
-  // Get expierence for the given index
-  const expierences = AllExpierences[IndexOfAllExpierences] || [];
+  // Get experience for the given index
+  const experiences = AllExperiences[IndexOfAllExperiences] || [];
 
   return (
     <ul>
-      {expierences.map((expierence, index) => (
-        <li key={expierence + index}>{expierence}</li>
+      {experiences.map((experience, index) => (
+        <li key={experience + index}>{experience}</li>
       ))}
     </ul>
   );
 }
 
-export default Expierence;
+export default Experience;

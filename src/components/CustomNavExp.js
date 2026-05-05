@@ -26,16 +26,16 @@ const CustomNav = ({ li, handleClick }) => {
           </div>
         ))}
       </ul>
-      <div class="nav-footer-icons">
+      <div className="nav-footer-icons">
         <a href="https://github.com/HerndonE" target="_blank" rel="noreferrer">
-          <i class="bi bi-github"></i>
+          <i className="bi bi-github"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/ethan-herndon/"
           target="_blank"
           rel="noreferrer"
         >
-          <i class="bi bi-linkedin"></i>
+          <i className="bi bi-linkedin"></i>
         </a>
       </div>
     </nav>
