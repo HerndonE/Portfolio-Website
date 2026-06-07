@@ -1,3 +1,5 @@
+const RedwoodCreditUnionExperience = ["Coming Soon!"];
+
 const EchoStarExperience = [
   "Manage and optimize ticketing applications and internal domains, ensuring efficient provisioning, routing, and resolution of agents/internal employee service tickets.",
   "Design and implement automation rules, routing logic, and interface enhancements to streamline case management processes.",
@@ -58,6 +60,7 @@ const CSUMBExperience = [
   "Confidently installed numerous network peripherals such as cameras, door locks and Wifi access points.",
 ];
 const ExperienceContainer = [
+  RedwoodCreditUnionExperience,
   EchoStarExperience,
   MightyOakMedicalExperience,
   AtlassianExperience,

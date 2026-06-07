@@ -67,7 +67,7 @@ const Home = () => (
               </div>
               <br />
               <div className="role">
-                <h3>Business Operations Analyst II</h3>
+                <h3>IT Operations Analyst I</h3>
               </div>
               <br />
               <p>
@@ -103,13 +103,43 @@ const Home = () => (
         <div id="experience" className="section">
           <div className="custom-paragraph">
             <div className="experience-entry">
-              <div className="experience-start-year"> Oct 2025 - Present</div>
+              <div className="experience-start-year"> June 2026 - Present</div>
               <div className="experience-description">
                 <div className="divider">
                   <h3>Experience</h3>
                 </div>
                 <div className="year-span">
-                  <span>Oct 2025 - Present</span>
+                  <span>June 2026 - Present</span>
+                </div>
+                <div className="company-names">
+                  <a
+                    href="https://www.redwoodcu.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    <div className="job-title">
+                      IT Operations Analyst I - Redwood Credit Union{" "}
+                      <span>&#8599;</span>{" "}
+                    </div>
+                  </a>
+                </div>
+                <Experience
+                  AllExperiences={ExperienceContainer}
+                  IndexOfAllExperiences={0}
+                />
+                <ExperienceTags
+                  AllTags={ExperienceTagContainer}
+                  IndexOfAllTags={0}
+                />
+              </div>
+            </div>
+
+            <div className="experience-entry">
+              <div className="experience-start-year"> Oct 2025 - May 2026</div>
+              <div className="experience-description">
+                <div className="year-span">
+                  <span>Oct 2025 - May 2026</span>
                 </div>
                 <div className="company-names">
                   <a
@@ -126,11 +156,11 @@ const Home = () => (
                 </div>
                 <Experience
                   AllExperiences={ExperienceContainer}
-                  IndexOfAllExperiences={0}
+                  IndexOfAllExperiences={1}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={0}
+                  IndexOfAllTags={1}
                 />
               </div>
             </div>
@@ -158,11 +188,11 @@ const Home = () => (
                 </div>
                 <Experience
                   AllExperiences={ExperienceContainer}
-                  IndexOfAllExperiences={1}
+                  IndexOfAllExperiences={2}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={1}
+                  IndexOfAllTags={2}
                 />
               </div>
             </div>
@@ -314,7 +344,7 @@ const ExperiencePage = () => (
         <div id="experience" className="section">
           <div className="custom-paragraph">
             <div className="experience-entry">
-              <div className="experience-start-year"> Oct 2025 - Present</div>
+              <div className="experience-start-year"> June 2026 - Present</div>
               <div className="experience-description">
                 <a href="/" rel="noreferrer" className="link">
                   <div className="job-title">
@@ -325,7 +355,36 @@ const ExperiencePage = () => (
                   <h3>Experience</h3>
                 </div>
                 <div className="year-span">
-                  <span>Oct 2025 - Present</span>
+                  <span>June 2026 - Present</span>
+                </div>
+                <div className="company-names">
+                  <a
+                    href="https://www.redwoodcu.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link"
+                  >
+                    <div className="job-title">
+                      IT Operations Analyst I - Redwood Credit Union{" "}
+                      <span>&#8599;</span>{" "}
+                    </div>
+                  </a>
+                </div>
+                <Experience
+                  AllExperiences={ExperienceContainer}
+                  IndexOfAllExperiences={0}
+                />
+                <ExperienceTags
+                  AllTags={ExperienceTagContainer}
+                  IndexOfAllTags={0}
+                />
+              </div>
+            </div>
+            <div className="experience-entry">
+              <div className="experience-start-year"> Oct 2025 - May 2026</div>
+              <div className="experience-description">
+                <div className="year-span">
+                  <span>Oct 2025 - May 2026</span>
                 </div>
                 <div className="company-names">
                   <a
@@ -342,11 +401,11 @@ const ExperiencePage = () => (
                 </div>
                 <Experience
                   AllExperiences={ExperienceContainer}
-                  IndexOfAllExperiences={0}
+                  IndexOfAllExperiences={1}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={0}
+                  IndexOfAllTags={1}
                 />
               </div>
             </div>
@@ -373,11 +432,11 @@ const ExperiencePage = () => (
                 </div>
                 <Experience
                   AllExperiences={ExperienceContainer}
-                  IndexOfAllExperiences={1}
+                  IndexOfAllExperiences={2}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={1}
+                  IndexOfAllTags={2}
                 />
               </div>
             </div>
@@ -402,11 +461,11 @@ const ExperiencePage = () => (
                 </div>
                 <Experience
                   AllExperiences={ExperienceContainer}
-                  IndexOfAllExperiences={2}
+                  IndexOfAllExperiences={3}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={2}
+                  IndexOfAllTags={3}
                 />
               </div>
             </div>
@@ -431,11 +490,11 @@ const ExperiencePage = () => (
                 </div>
                 <Experience
                   AllExperiences={ExperienceContainer}
-                  IndexOfAllExperiences={3}
+                  IndexOfAllExperiences={4}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={3}
+                  IndexOfAllTags={4}
                 />
               </div>
             </div>
@@ -460,11 +519,11 @@ const ExperiencePage = () => (
                 </div>
                 <Experience
                   AllExperiences={ExperienceContainer}
-                  IndexOfAllExperiences={4}
+                  IndexOfAllExperiences={5}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={4}
+                  IndexOfAllTags={5}
                 />
               </div>
             </div>
@@ -489,11 +548,11 @@ const ExperiencePage = () => (
                 </div>
                 <Experience
                   AllExperiences={ExperienceContainer}
-                  IndexOfAllExperiences={3}
+                  IndexOfAllExperiences={4}
                 />
                 <ExperienceTags
                   AllTags={ExperienceTagContainer}
-                  IndexOfAllTags={3}
+                  IndexOfAllTags={4}
                 />
               </div>
             </div>

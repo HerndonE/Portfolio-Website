@@ -1,3 +1,4 @@
+const RedwoodCreditUnionTag = [];
 const EchoStarTag = [
   "Python",
   "MSSQL",
@@ -65,6 +66,7 @@ const CSUMBTags = [
   "Customer Service",
 ];
 const ExperienceTagContainer = [
+  RedwoodCreditUnionTag,
   EchoStarTag,
   MightyOakMedicalTags,
   AtlassianTags,
