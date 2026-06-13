@@ -67,7 +67,7 @@ const Home = () => (
               </div>
               <br />
               <div className="role">
-                <h3>IT Operations Analyst I</h3>
+                <h3>IT Analyst I</h3>
               </div>
               <br />
               <p>
@@ -119,7 +119,7 @@ const Home = () => (
                     className="link"
                   >
                     <div className="job-title">
-                      IT Operations Analyst I - Redwood Credit Union{" "}
+                      IT Analyst I - Redwood Credit Union{" "}
                       <span>&#8599;</span>{" "}
                     </div>
                   </a>
@@ -365,7 +365,7 @@ const ExperiencePage = () => (
                     className="link"
                   >
                     <div className="job-title">
-                      IT Operations Analyst I - Redwood Credit Union{" "}
+                      IT Analyst I - Redwood Credit Union{" "}
                       <span>&#8599;</span>{" "}
                     </div>
                   </a>

@@ -16,7 +16,7 @@ const CustomNav = ({ li, handleClick }) => {
         </div>
         <br />
         <div className="role">
-          <h3>IT Operations Analyst I</h3>
+          <h3>IT Analyst I</h3>
         </div>
         <br />
         <p>

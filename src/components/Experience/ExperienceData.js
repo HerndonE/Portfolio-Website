@@ -1,10 +1,14 @@
-const RedwoodCreditUnionExperience = ["Coming Soon!"];
+const RedwoodCreditUnionExperience = [
+  "Maintaining core business systems and ensured adherence to organizational uptime standards during system conversions, upgrades, and maintenance activities.",
+  "Ensuring secure transmission of sensitive organizational data through encryption technologies and established security controls.",
+  "Responding to critical infrastructure alerts including environmental monitoring, communication failures, and system outages while coordinating appropriate remediation efforts.",
+];
 
 const EchoStarExperience = [
-  "Manage and optimize ticketing applications and internal domains, ensuring efficient provisioning, routing, and resolution of agents/internal employee service tickets.",
-  "Design and implement automation rules, routing logic, and interface enhancements to streamline case management processes.",
-  "Gather, analyze, and document requirements from multiple stakeholders to support development and process optimization.",
-  "Design and maintain Python scripts to interface with internal and external APIs, streamlining ticketing operations and data management.",
+  "Managed and optimized ticketing applications and internal domains, ensuring efficient provisioning, routing, and resolution of agents/internal employee service tickets.",
+  "Designed and implemented automation rules, routing logic, and interface enhancements to streamline case management processes.",
+  "Gathered, analyzed, and documented requirements from multiple stakeholders to support development and process optimization.",
+  "Designed and maintained Python scripts to interface with internal and external APIs, streamlining ticketing operations and data management.",
 ];
 
 const MightyOakMedicalExperience = [

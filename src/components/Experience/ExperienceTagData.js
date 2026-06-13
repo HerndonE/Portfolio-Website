@@ -1,4 +1,12 @@
-const RedwoodCreditUnionTag = [];
+const RedwoodCreditUnionTag = [
+  "OpCon",
+  "Symitar Capture",
+  "Python",
+  "Git",
+  "Jira",
+  "Teams",
+  "Confluence",
+];
 const EchoStarTag = [
   "Python",
   "MSSQL",
